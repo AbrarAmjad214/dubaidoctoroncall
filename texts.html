@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Previous head content remains the same -->
+  <style>
+    /* Previous styles remain the same until .stats-container */
+    
+    /* New layout styles */
+    .hero-main-content {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    @media (min-width: 992px) {
+      .hero-main-content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+      }
+      
+      .hero-text-content {
+        flex: 1;
+      }
+      
+      .stats-sidebar {
+        width: 300px;
+        position: relative;
+        margin-top: 20px;
+      }
+    }
+    
+    /* Animated stats container */
+    .stats-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 0;
+      position: relative;
+      animation: floatUpDown 4s ease-in-out infinite;
+    }
+    
+    @keyframes floatUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+    
+    .stat-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px 20px;
+      border-radius: 15px;
+      color: #fff;
+      text-align: center;
+      transition: all 0.4s ease;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      width: 100%;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(29, 183, 255, 0.4);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(29, 183, 255, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(29, 183, 255, 0);
+      }
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+      .stats-sidebar {
+        margin-top: 30px;
+      }
+      
+      .stats-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .stat-box {
+        width: auto;
+        min-width: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="header-container">
+    <div class="header-content">
+      <img style="width: 80px;" src="logo.png" alt="Bacora Logo" class="hero-logo" />
+      <a href="tel:8002467" class="desktop-call-btn">
+        <i class="fas fa-phone me-2"></i>Call Now
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero-main-content">
+      <div class="hero-text-content">
+        <h1 class="fw-bold mb-4">Doctor Home Visits in <span class="text-highlight">30 Minutes</span></h1>
+        <p class="lead mb-4">Dubai's fastest DHA-certified home medical care. Trusted by families for safe, quick & expert treatment at your doorstep.</p>
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="https://wa.me/971504353451" class="btn btn-main">
+            <i class="fab fa-whatsapp me-2"></i>See a Doctor Now
+          </a>
+          <a href="tel:8002467" class="btn btn-outline-light">
+            <i class="fas fa-phone me-2"></i>Call Now
+          </a>
+        </div>
+
+        <div class="trust-badges mt-3">
+          <div><i class="fas fa-check-circle text-info"></i>DHA Certified</div>
+          <div><i class="fas fa-user-nurse text-info"></i>Licensed Nurses</div>
+          <div><i class="fas fa-clock text-info"></i>24/7 Support</div>
+        </div>
+      </div>
+      
+      <div class="stats-sidebar">
+        <div class="stats-container">
+          <div class="stat-box">
+            <h4>15+</h4>
+            <small>Years Experience</small>
+          </div>
+          <div class="stat-box">
+            <h4>150k+</h4>
+            <small>Patients Served</small>
+          </div>
+          <div class="stat-box">
+            <h4>100+</h4>
+            <small>Expert Doctors</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Buttons (Mobile) -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/971504353451" class="floating-btn whatsapp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:8002467" class="floating-btn phone">
+      <i class="fas fa-phone"></i>
+      <span class="tooltip">Call Now</span>
+    </a>
+  </div>
+</section>
+
+<!-- Rest of your content remains the same -->
+</body>
+</html>

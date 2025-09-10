@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="jazYoFmI-8ys22-npSSUDA1oJCzWlNP32AuGQJINr1A" />
+  <title>Bacora Home Health Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+  <!-- Topbar -->
+  <div class="topbar py-2 bg-light border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="topbar-left d-flex align-items-center">
+        <span class="me-4"><i class="fa-solid fa-phone me-2 text-primary"></i> <a href="tel:+971500000000" class="text-dark">+971 50 000 0000</a></span>
+        <span><i class="fa-solid fa-envelope me-2 text-primary"></i> <a href="mailto:info@bacora.com" class="text-dark">info@bacora.com</a></span>
+      </div>
+      <div class="topbar-right">
+        <a href="#" class="me-3 text-dark"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-dark"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <header class="sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../logo.png" alt="Bacora Logo" style="height:50px;">
+        </a>
+
+        <!-- Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About Us</a>
+            </li>
+            
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="../services/lab-at-home.html">Lab At Home</a></li>
+                <li><a class="dropdown-item" href="../services/nursing-care.html">Nursing Care</a></li>
+                <li><a class="dropdown-item" href="../services/injection-services.html">Injection Services</a></li>
+                <li><a class="dropdown-item" href="../services/physiotherapy.html">Physiotherapy</a></li>
+                <li><a class="dropdown-item" href="../services/doctor-consultation.html">Doctor Consultation</a></li>
+                <li><a class="dropdown-item" href="../services/chronic-care.html">Chronic Care</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+
+            <!-- Call Button -->
+            <li class="nav-item ms-lg-3">
+              <a href="tel:+971500000000" class="btn btn-primary px-4">Call Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; color: #333; margin: 0; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+
+    .hero {
+      background: linear-gradient(rgba(0,150,136,0.6), rgba(0,105,210,0.6)),
+                  url("../pic/services_1.jpg") center/cover no-repeat;
+      color: #fff; text-align: center;
+      padding: 120px 20px;
+      position: relative;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 15px; }
+    .hero p  { font-size: 1.3rem; margin-bottom: 20px; max-width: 700px; margin-left:auto; margin-right:auto; }
+    .btn-cta {
+      background: #ff9800; color: #fff; padding: 15px 35px;
+      border-radius: 30px; text-decoration: none; font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-cta:hover { background: #e68900; }
+
+    .section { padding: 70px 0; }
+    .section h2 {  font-size: 2.4rem; margin-bottom: 40px; color: #00796b; }
+
+    .about, .how, .benefits, .packages, .faq {
+      display: flex; flex-wrap: wrap; align-items: center;
+      gap: 30px;
+    }
+    .about .text, .how .text, .benefits .text, .packages .text, .faq .text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .about img, .how img, .benefits img, .packages img, .faq img {
+      flex: 1;
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .how .step {
+      display: flex; align-items: center; gap: 15px; margin-bottom: 25px;
+    }
+    .how .step img {
+      width: 80px; border-radius: 10px;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: 100%;
+    }
+    .benefit-card {
+      background: #e8f5e9;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      background: #c8e6c9;
+    }
+    .benefit-card i {
+      font-size: 2.5rem;
+      color: #388e3c;
+      margin-bottom: 12px;
+    }
+
+    .packages-list {
+      list-style: none;
+      padding: 0;
+    }
+    .packages-list li {
+      background: #e3f2fd;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-item h4 {
+      margin-bottom: 8px;
+      color: #2e7d32;
+    }
+
+    .book-strip {
+      text-align: center;
+      background: linear-gradient(90deg, #00b894, #00acc1);
+      color: #fff;
+      padding: 60px 20px;
+    }
+    .book-strip h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+    .book-strip a {
+      display: inline-block;
+      margin-top: 15px;
+      background: #fff; color: #00796b;
+      padding: 15px 40px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .book-strip a:hover {
+      background: #eee;
+    }
+
+    footer {
+      background: #263238; color: #ccc;
+      text-align: center; padding: 25px;
+      font-size: 0.9rem;
+    }
+  </style>
+  <!-- CSS -->
+<style>
+  .package-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+
+  .package-card i {
+    font-size: 42px;
+    color: #007bff;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .package-card h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+  }
+
+  .package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+</style>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Highest Quality Care - Most Affordable <br> Price Lab Tests at Home in Dubai</h1>
+  <p>
+    Book lab tests at home in Dubai with fast, reliable sample collection by
+    certified professionals. DHA-approved labs, accurate results, and same-day appointments available.
+  </p>
+  <a href="https://wa.me/971504353451" class="btn-cta">📲 Book Now</a>
+</section>
+
+<!-- About Service -->
+<section class="section">
+  <div class="container about">
+    <img src="../pic/services_1.jpg" alt="Professional, Convenient & Reliable Testing" style="width: 300px; border-radius:10px;">
+    <div class="text">
+      <h2>Professional, Convenient & Reliable Testing</h2>
+      <h3>Get Trusted, Convenient & DHA-Approved Lab Testing From the Comfort of Your Home</h3>
+      <p>
+        Need a lab test but don’t want to visit a clinic or hospital? Our at-home lab test service in Dubai brings certified healthcare professionals right to your doorstep. We offer a wide range of tests with home sample collection, ensuring safety, speed, and accuracy.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section" style="background:#f5fdfc;">
+  <div class="container">
+    <h2>Why Choose Our Home Lab Testing Service?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <i class="fas fa-certificate"></i>
+        <h4>DHA-Approved Labs</h4>
+        <p>All tests are processed in licensed laboratories recognized by Dubai Health Authority (DHA).</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-user-nurse"></i>
+        <h4>Certified Professionals</h4>
+        <p>Experienced phlebotomists collect your sample safely and hygienically.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h4>Convenient Booking</h4>
+        <p>Book your test online or via WhatsApp—available 24/7.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-vials"></i>
+        <h4>Wide Range of Tests</h4>
+        <p>From basic blood tests to comprehensive health panels.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-clock"></i>
+        <h4>Fast Results</h4>
+        <p>Most reports are delivered within 24 to 48 hours via email or WhatsApp.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-home"></i>
+        <h4>At Your Location</h4>
+        <p>We collect samples from homes, offices, and hotels across Dubai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tests We Offer -->
+<section class="section py-5" style="background:#f9f9f9;">
+  <div class="container text-center">
+    <h2 class="mb-5 fw-bold">Tests We Offer</h2>
+    <div class="row g-4" style="display: flex;">
+      
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="package-card">
+          <i class="bi bi-droplet-fill"></i>
+          <h5>Blood Tests</h5>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="package-card">
+          <i class="bi bi-cup-straw"></i>
+          <h5>Urine Tests</h5>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="package-card">
+          <i class="bi bi-virus"></i>
+          <h5>COVID-19 Tests</h5>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="package-card">
+          <i class="bi bi-flower3"></i>
+          <h5>Allergy Tests</h5>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="package-card">
+          <i class="bi bi-heart-pulse"></i>
+          <h5>S.T.D Tests</h5>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="package-card">
+          <i class="bi bi-activity"></i>
+          <h5>Diabetes Tests</h5>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="package-card">
+          <i class="bi bi-heart-half"></i>
+          <h5>Cholesterol Tests</h5>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="package-card">
+          <i class="bi bi-brightness-high-fill"></i>
+          <h5>Vitamin Tests</h5>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<!-- How It Works -->
+<section class="section" style="background: #f5fdfc;">
+  <div class="container how">
+    <div class="text text-align-center">
+      <h2>Get an Instant Appointment in Just 3 Easy Steps</h2>
+      <div class="step">
+        <div>
+          <h4>1. Book Appointment</h4>
+          <p>Schedule your appointment via WhatsApp or Call.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h4>2. Nurse Visits You</h4>
+          <p>A certified phlebotomist visits your location, verifies details, and collects your samples.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h4>3. Laboratory Testing & Report Delivery</h4>
+          <p>Samples are tested in DHA-approved labs. Reports are delivered within 24–48 hours via WhatsApp or Email.</p>
+        </div>
+      </div>
+    </div>
+    <img src="../pic/services_1.jpg" alt="How it works workflow" style="width: 300px; border-radius:10px;">
+  </div>
+</section>
+
+<!-- Discover Unmatched -->
+<section class="section">
+  <div class="container">
+    <h2>Discover Unmatched At-Home Lab Testing Services in Dubai</h2>
+    <p>
+      At Dubai Doctor On Call, we put your comfort and convenience first. Our team of DHA-certified professionals ensures a smooth and hassle-free process—from collecting samples right at your doorstep to delivering precise and reliable results.
+    </p>
+    <ul>
+      <li><strong>Convenience:</strong> No need to visit a lab; we bring the lab services to you.</li>
+      <li><strong>Accuracy:</strong> Tests are conducted in advanced labs by certified experts.</li>
+      <li><strong>Speed:</strong> Receive your results quickly with fast turnaround times.</li>
+      <li><strong>Privacy:</strong> Complete confidentiality and secure handling of your information.</li>
+      <li><strong>Comprehensive:</strong> A wide variety of tests to meet all your healthcare needs.</li>
+    </ul>
+    <p>
+      Our service is ideal for seniors, individuals with limited mobility, busy professionals, and those managing chronic or acute health conditions at home. Take charge of your well-being without stepping outside your door.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container faq">
+    <div class="text">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h4 class="faq-question">What is Lab at Home Service?</h4>
+        <p class="faq-answer">
+          Lab at Home Service offers professional medical sample collection (such as blood tests, urine
+          tests, swabs) from the comfort of your home, available 24 hours a day, 7 days a week.
+          How do I book a Lab at Home appointment?
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4 class="faq-question">Are the lab technicians qualified?</h4>
+        <p class="faq-answer">
+          Yes, all our technicians are certified professionals trained to collect samples safely and
+          hygienically.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4 class="faq-question">Is the Lab at Home service available 24x7 in Dubai?</h4>
+        <p class="faq-answer">
+          Yes, our service operates round the clock, every day, including holidays, to cater to your needs
+          anytime.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4 class="faq-question">What types of tests are available for home collection?</h4>
+        <p class="faq-answer">
+          We offer a wide range of tests including blood tests, urine tests, COVID-19 tests, allergy tests,
+          hormone tests, and more. Please check our website or contact us for the full list.
+        </p>
+      </div>
+    </div>
+
+    <img src="../pic/services_1.jpg" alt="FAQ image" style="width: 300px; border-radius:10px;">
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  .faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .faq-question {
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+  }
+
+  .faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+  }
+
+  .faq-item.active .faq-question::after {
+    content: "-";
+  }
+
+  .faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+  }
+
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  document.querySelectorAll(".faq-question").forEach((question) => {
+    question.addEventListener("click", () => {
+      const parent = question.parentElement;
+
+      // Close all others
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        if (item !== parent) {
+          item.classList.remove("active");
+        }
+      });
+
+      // Toggle current
+      parent.classList.toggle("active");
+    });
+  });
+</script>
+
+
+<!-- Book Now CTA -->
+<section class="book-strip">
+  <h2>24/7 Lab at Home Service in Dubai</h2>
+  <p>Experience hassle-free, professional, and accurate medical testing at the comfort of your home.</p>
+  <a href="https://wa.me/971504353451">📲 Book Now via WhatsApp</a>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bacora Healthcare | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
