@@ -111,7 +111,7 @@
     }
 
     .text-highlight {
-      color: var(--primary);
+      color: #FFBA08;
       position: relative;
       display: inline-block;
     }
@@ -306,7 +306,7 @@
       margin: 0;
       font-size: 28px;
       font-weight: 700;
-      color: var(--primary);
+      color: #FFBA08;
       text-shadow: 0 2px 5px rgba(29, 183, 255, 0.3);
     }
     
@@ -488,7 +488,7 @@
   
   .square-badge i {
     font-size: 22px;
-    color: var(--primary);
+    color: #FFBA08;
     margin-bottom: 8px;
     transition: all 0.3s ease;
   }
