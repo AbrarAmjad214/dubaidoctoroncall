@@ -1,12 +1,12 @@
 
     :root {
-      --primary: #1db7ff;
+      --primary: #0D2441;
       --primary-dark: #0d8fd6;
       --dark-blue: #050a28;
       --stats-bg: #2a2f48;
       --stats-dark: #1a1f38;
-      --whatsapp-green: #25D366;
-      --whatsapp-dark-green: #128C7E;
+      --whatsapp-green: #FFBA08;
+      --whatsapp-dark-green: #0D2441;
     }
 
     body {
@@ -84,7 +84,7 @@
     }
 
     .desktop-call-btn {
-      background-color: #ff2222;
+      background-color: #FFBA08;
       color: white;
       border: none;
       padding: 10px 20px;
@@ -222,7 +222,7 @@
     }
 
     .floating-btn.phone {
-      background: linear-gradient(135deg, #ff2222, #cc0000);
+      background: linear-gradient(135deg, #FFBA08, #FFBA08);
     }
 
     .floating-btn .tooltip {
@@ -266,7 +266,7 @@
         width: 300px;
         position: relative;
         margin-top: 20px;
-        background: rgba(42, 47, 72, 0.9);
+        background: #0D2441;
         border-radius: 20px;
         padding: 25px;
         backdrop-filter: blur(10px);
@@ -286,7 +286,7 @@
     }
     
     .stat-box {
-      background: linear-gradient(135deg, rgba(42, 47, 72, 0.9), rgba(32, 37, 62, 0.9));
+      background: linear-gradient(135deg, #0D2441, rgba(32, 37, 62, 0.9));
       padding: 20px;
       border-radius: 15px;
       color: #fff;
@@ -320,7 +320,7 @@
     
     .stat-box:hover {
       transform: translateY(-8px) scale(1.02);
-      background: linear-gradient(135deg, rgba(52, 57, 82, 0.9), rgba(42, 47, 72, 0.9));
+      background: linear-gradient(135deg, rgba(52, 57, 82, 0.9), #0D2441);
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     }
     
@@ -561,7 +561,7 @@
 }
 
 .bacora-ultimate-section h2 span {
-  color: #008cff;
+  color: #FFBA08;
   background: rgba(0, 140, 255, 0.1);
   padding: 2px 6px;
   border-radius: 6px;
@@ -592,7 +592,7 @@
 }
 
 .features-grid i {
-  background: linear-gradient(to right, #008cff, #00c3ff);
+  background: linear-gradient(to right, #FFBA08, #FFBA08);
   color: #fff;
   padding: 10px;
   border-radius: 50%;
@@ -605,7 +605,7 @@
   border-radius: 50px;
   font-weight: 600;
   color: #fff;
-  background: rgba(0, 140, 255, 0.6);
+  background: #FFBA08;
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255,255,255,0.2);
   text-decoration: none;
@@ -614,7 +614,7 @@
 }
 
 .glass-btn:hover {
-  background: #0073e6;
+  background: #FFBA08;
   transform: scale(1.05);
 }
 
@@ -664,7 +664,7 @@
   left: -50px;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, #008cff22 0%, transparent 70%);
+  background: radial-gradient(circle, #FFBA0822 0%, transparent 70%);
   border-radius: 50%;
   z-index: -1;
 }
@@ -766,19 +766,19 @@
     }
 
     .call-btn {
-      background-color: #007bff;
+      background-color: #FFBA08;
     }
 
     .call-btn:hover {
-      background-color: #0056b3;
+      background-color: #FFBA08;
     }
 
     .whatsapp-btn {
-      background-color: #25D366;
+      background-color: #FFBA08;
     }
 
     .whatsapp-btn:hover {
-      background-color: #128C7E;
+      background-color: #0D2441;
     }
 
     @media (max-width: 768px) {
@@ -837,7 +837,7 @@
 .bacora-location-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(0, 51, 102, 0.15);
-  border-top-color: #1db7ff;
+  border-top-color: #0D2441;
 }
 
 .bacora-location-card:hover .bacora-location-icon {
@@ -877,7 +877,7 @@
   left: 0;
   width: 50px;
   height: 3px;
-  background-color: #1db7ff;
+  background-color: #0D2441;
   margin: 0 auto;
   right: 0;
   transition: width 0.3s ease;
@@ -901,7 +901,7 @@
 
 .bacora-card-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #003366, #1db7ff);
+  background: linear-gradient(135deg, #003366, #0D2441);
   color: white;
   padding: 6px 15px;
   border-radius: 50px;
@@ -1009,7 +1009,7 @@
 
 .section-tag {
   display: inline-block;
-  background: linear-gradient(135deg, #1db7ff 0%, #0066cc 100%);
+  background: linear-gradient(135deg, #0D2441 0%, #0066cc 100%);
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 100px;
@@ -1089,7 +1089,7 @@
 .step-number {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #1db7ff 0%, #0066cc 100%);
+  background: linear-gradient(135deg, #0D2441 0%, #0066cc 100%);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -1105,7 +1105,7 @@
 .step-line {
   width: 4px;
   height: 30px;
-  background: linear-gradient(to bottom, #1db7ff 0%, #0066cc 100%);
+  background: linear-gradient(to bottom, #0D2441 0%, #0066cc 100%);
   position: relative;
   z-index: 2;
 }
@@ -1134,7 +1134,7 @@
 }
 
 .process-card:hover .step-icon {
-  background: linear-gradient(135deg, #1db7ff 0%, #0066cc 100%);
+  background: linear-gradient(135deg, #0D2441 0%, #0066cc 100%);
 }
 
 .process-card:hover .step-icon svg {
@@ -1187,12 +1187,12 @@
 }
 
 .cta-button.whatsapp {
-  background-color: #25D366;
+  background-color: #FFBA08;
   color: white;
 }
 
 .cta-button.whatsapp:hover {
-  background-color: #128C7E;
+  background-color: #0D2441;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
 }
@@ -1273,7 +1273,7 @@
 #bacora-appointment {
   position: relative;
   padding: 6rem 0;
-  background: rgba(42, 47, 72, 0.9);
+  background: #0D2441;
   overflow: hidden;
   color: white;
   isolation: isolate; /* Creates new stacking context */
@@ -1440,12 +1440,12 @@
 }
 
 #bacora-appointment .bacora-whatsapp-btn {
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  background: linear-gradient(135deg, #FFBA08 0%, #0D2441 100%);
   box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
 }
 
 #bacora-appointment .bacora-call-btn {
-  background: linear-gradient(135deg, #FF2222 0%, #CC0000 100%);
+  background: linear-gradient(135deg, #FFBA08 0%, #FFBA08 100%);
   box-shadow: 0 5px 15px rgba(255, 34, 34, 0.3);
 }
 
@@ -1474,7 +1474,7 @@
 
 #bacora-appointment .bacora-info-item i {
   margin-right: 0.7rem;
-  color: #1db7ff;
+  color: #0D2441;
 }
 
 #bacora-appointment .bacora-info-item:hover {
@@ -1560,7 +1560,7 @@
 
 #bacora-doctors .bacora-section-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #1db7ff 0%, #0066cc 100%);
+  background: linear-gradient(135deg, #0D2441 0%, #0066cc 100%);
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
@@ -1658,7 +1658,7 @@
 }
 
 #bacora-doctors .bacora-doctor-specialty {
-  background: #1db7ff;
+  background: #0D2441;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 50px;
@@ -1713,7 +1713,7 @@
 }
 
 #bacora-doctors .bacora-doctor-meta i {
-  color: #1db7ff;
+  color: #0D2441;
   margin-right: 0.3rem;
 }
 
@@ -1813,7 +1813,7 @@
 
 #bacora-faq .bacora-faq-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #1db7ff 0%, #0066cc 100%);
+  background: linear-gradient(135deg, #0D2441 0%, #0066cc 100%);
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
@@ -2031,13 +2031,13 @@
 }
 
 #bacora-faq .bacora-whatsapp-btn {
-  background: #25D366;
+  background: #FFBA08;
   color: white;
   box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
 }
 
 #bacora-faq .bacora-whatsapp-btn:hover {
-  background: #128C7E;
+  background: #0D2441;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
 }
@@ -2090,12 +2090,7 @@
 
 
 /* Footer Styles */
-.bacora-footer {
-  background: rgba(42, 47, 72, 0.9);
-  color: white;
-  padding: 2.5rem 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 .footer-container {
   max-width: 1200px;
@@ -2137,7 +2132,7 @@
 }
 
 .footer-address i {
-  color: #1db7ff;
+  color: #0D2441;
 }
 
 .footer-actions {
@@ -2160,12 +2155,12 @@
 }
 
 .call-btn {
-  background: #1db7ff;
+  background: #0D2441;
   color: white;
 }
 
 .whatsapp-btn {
-  background: #25D366;
+  background: #FFBA08;
   color: white;
 }
 
@@ -2211,7 +2206,7 @@
 /* Stylish Services Section with Dark Blue Background */
 .bacora-services-section {
   padding: 100px 0;
-  background: rgba(42, 47, 72, 0.9);
+  background: #0D2441;
   font-family: 'Poppins', sans-serif;
   position: relative;
   overflow: hidden;
@@ -2233,7 +2228,7 @@
 .bacora-section-badge {
   display: inline-block;
   background: #ffffff;
-  color: rgba(42, 47, 72, 0.9);
+  color: #0D2441;
   padding: 8px 20px;
   border-radius: 30px;
   font-size: 14px;
@@ -2377,7 +2372,7 @@
 .bacora-service-name {
   font-size: 22px;
   font-weight: 700;
-  color: rgba(42, 47, 72, 0.9);
+  color: #0D2441;
   margin-bottom: 15px;
   position: relative;
   padding-bottom: 10px;
@@ -2406,7 +2401,7 @@
 }
 
 .bacora-whatsapp-btn {
-  background-color: #25D366;
+  background-color: #FFBA08;
   color: white;
   padding: 12px 15px;
   border-radius: 8px;
@@ -2423,13 +2418,13 @@
 }
 
 .bacora-whatsapp-btn:hover {
-  background-color: #128C7E;
+  background-color: #0D2441;
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
 }
 
 .bacora-call-btn {
-  background-color: rgba(42, 47, 72, 0.9);
+  background-color: #0D2441;
   color: white;
   padding: 12px 15px;
   border-radius: 8px;
@@ -2521,9 +2516,13 @@
     .navbar .nav-link {
       font-weight: 500;
       margin-left: 15px;
+      color: #fff;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+      color: #FFBA08 !important;
     }
     .navbar .nav-link:hover {
-      color: #0d6efd;
+      color: #FFBA08;
     }
 
     .sticky-header {
@@ -2580,7 +2579,6 @@
 }
 
     .hero-section {
-      background: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b') center/cover no-repeat;
       color: white;
       padding: 100px 0;
       text-align: center;
@@ -2595,7 +2593,7 @@
     }
     .section-title h2 {
       font-weight: bold;
-      color: #007bff;
+      color: #FFBA08;
     }
     .service-image {
       border-radius: 10px;
@@ -2614,7 +2612,7 @@
       box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
     }
     .cta-section {
-      background: #007bff;
+      background: rgb(13 36 65) !important;
       color: white;
       text-align: center;
       padding: 60px 20px;
@@ -2664,7 +2662,7 @@
     .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
 
     .hero {
-      background: linear-gradient(rgba(0,150,136,0.6), rgba(0,105,210,0.6)),
+      background: linear-gradient(rgba(13,36,65,0.6), rgba(13,36,65,0.6)),
                   url("../pic/services_1.jpg") center/cover no-repeat;
       color: #fff; text-align: center;
       padding: 120px 20px;
@@ -2680,7 +2678,7 @@
     .btn-cta:hover { background: #e68900; }
 
     .section { padding: 70px 0; }
-    .section h2 {  font-size: 2.4rem; margin-bottom: 40px; color: #00796b; }
+    .section h2 {  font-size: 2.4rem; margin-bottom: 40px; color: #0D2441; }
 
     .about, .how, .benefits, .packages, .faq {
       display: flex; flex-wrap: wrap; align-items: center;
@@ -2723,7 +2721,7 @@
     }
     .benefit-card i {
       font-size: 2.5rem;
-      color: #388e3c;
+      color: #FFBA08;
       margin-bottom: 12px;
     }
 
@@ -2744,12 +2742,12 @@
     }
     .faq-item h4 {
       margin-bottom: 8px;
-      color: #2e7d32;
+      color: #0D2441;
     }
 
     .book-strip {
       text-align: center;
-      background: linear-gradient(90deg, #00b894, #00acc1);
+      background: linear-gradient(90deg, #FFBA08, #0D2441);
       color: #fff;
       padding: 60px 20px;
     }
@@ -2760,7 +2758,7 @@
     .book-strip a {
       display: inline-block;
       margin-top: 15px;
-      background: #fff; color: #00796b;
+      background: #fff; color: #0D2441;
       padding: 15px 40px;
       border-radius: 30px;
       font-weight: bold;
@@ -2772,7 +2770,7 @@
     }
 
     footer {
-      background: #263238; color: #ccc;
+      background: #0D2441; color: #ccc;
       text-align: center; padding: 25px;
       font-size: 0.9rem;
     }
@@ -2787,7 +2785,7 @@
 
   .package-card i {
     font-size: 42px;
-    color: #007bff;
+    color: #FFBA08;
     margin-bottom: 15px;
     display: block;
   }
@@ -2802,4 +2800,12 @@
   .package-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .bg-white{
+    background-color: #0D2441 !important;
+  }
+  a.btn.btn-primary.px-4{
+    background-color: #FFBA08;
+    border-color: #FFBA08;
   }
