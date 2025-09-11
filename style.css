@@ -9,14 +9,8 @@
       --whatsapp-dark-green: #0D2441;
     }
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      overflow-x: hidden;
-    }
 
     .hero-section {
-      background: url(hero.webp) no-repeat center center / cover;
       min-height: 100vh;
       color: white;
       position: relative;
@@ -2662,8 +2656,7 @@
     .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
 
     .hero {
-      background: linear-gradient(rgba(13,36,65,0.6), rgba(13,36,65,0.6)),
-                  url("../pic/services_1.jpg") center/cover no-repeat;
+      background: linear-gradient(rgba(13,36,65,0.6), rgba(13,36,65,0.6));
       color: #fff; text-align: center;
       padding: 120px 20px;
       position: relative;
@@ -2809,3 +2802,51 @@
     background-color: #FFBA08;
     border-color: #FFBA08;
   }
+  .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;  /* Darkness control */
+  z-index: -1;
+}
+/* Topbar default (desktop) */
+.topbar .topbar-left span {
+  margin-right: 1.5rem;
+}
+
+.topbar a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 425px) {
+  .topbar .container {
+    flex-direction: column;
+    text-align: center;
+    display: block;
+  }
+
+  .topbar-left {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .topbar-left span {
+    display: block;
+    margin: 5px 0;
+    margin-right: 0;
+  }
+
+  .topbar-right {
+    margin-top: 5px;
+  }
+}
+button.navbar-toggler{
+  background-color: white !important;
+  color: white !important;
+}
