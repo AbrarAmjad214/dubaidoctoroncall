@@ -11,6 +11,7 @@
 
 
     .hero-section {
+      background: url(hero.webp) no-repeat center center / cover;
       min-height: 100vh;
       color: white;
       position: relative;
@@ -622,6 +623,7 @@
 .doctor-image {
   width: 100%;
   border-radius: 20px;
+  margin-top: 30px;
 }
 
 .floating-badge {
@@ -2581,6 +2583,14 @@
       font-size: 48px;
       font-weight: bold;
     }
+    @media (max-width: 425px) {
+      .hero-section h1{
+        font-size: 25px;
+      }
+      .hero-section {
+      text-align: left;
+    }
+    }
     .section-title {
       text-align: center;
       margin-bottom: 50px;
@@ -2802,17 +2812,7 @@
     background-color: #FFBA08;
     border-color: #FFBA08;
   }
-  .hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.3;  /* Darkness control */
-  z-index: -1;
-}
+ 
 /* Topbar default (desktop) */
 .topbar .topbar-left span {
   margin-right: 1.5rem;
@@ -2849,4 +2849,54 @@
 button.navbar-toggler{
   background-color: white !important;
   color: white !important;
+}
+/* Hero container */
+.hero {
+  position: relative;                         /* required for pseudo-element */
+  padding: 100px 20px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Dark overlay (adjust alpha 0.3-0.9 as needed) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;                                    /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(0,0,0,0.6);                 /* use rgba instead of opacity so text stays bright */
+  z-index: 1;                                  /* put overlay above bg but below content */
+  pointer-events: none;
+}
+
+/* Ensure hero content sits above the overlay */
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+.bacora-footer {
+  color: #ddd;
+}
+
+.bacora-footer .footer-logo {
+  max-height: 70px;
+}
+
+.bacora-footer .footer-menu li {
+  margin-bottom: 8px;
+}
+
+.bacora-footer .footer-menu a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.bacora-footer .footer-menu a:hover {
+  color: #0d6efd; /* Bootstrap primary */
+}
+
+.bacora-footer .footer-btn {
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-weight: 500;
 }
