@@ -297,6 +297,11 @@
 .navbar-expand-lg .navbar-nav .nav-link{
     color: #ece5dd;
 }
+
+.list-unstyled a{
+  color: #f0f7ff !important;
+  text-decoration:none;
+}
 </style>
 </head>
 
@@ -1514,7 +1519,7 @@
             <h3>Bacora</h3>
             <p class="subtext">AVAILABLE 24/7</p>
             <p>Click on the Phone number below to talk to our team.</p>
-            <a href="tel:+971505136505" class="call-link" id="logButton" data-link="tel:+971505136505">📞 +971 505 136 505</a>  
+            <a href="tel:+971504353451" class="call-link" id="logButton" data-link="tel:+971504353451">📞 +971 505 136 505</a>  
         </div>
     </div>
     <!-- Whatsapp Box -->
@@ -1607,7 +1612,7 @@
                     body: JSON.stringify({
                         ref_id: refId,
                         action: "c_sub",
-                        clicked_link: "tel:+971505136505",
+                        clicked_link: "tel:+971504353451",
                         current_url: window.location.href,
                         // current_time: startedAt,
                     })
@@ -1633,7 +1638,7 @@
         const message = `Hi\n\nYour Ticket Ref No. ${refId}\n\nMy Message:\nI want a doctor at my location!\n\n(Please don't delete this message, as it helps us serve you better)`;
 
         const encodedMessage = encodeURIComponent(message);
-        const whatsappURL = `https://api.whatsapp.com/send?phone=+971505136505&text=${encodedMessage}`;
+        const whatsappURL = `https://api.whatsapp.com/send?phone=+971504353451&text=${encodedMessage}`;
 
         // Open WhatsApp immediately (before async code)
         window.open(whatsappURL, '_blank');
@@ -1647,7 +1652,7 @@
             },
             body: JSON.stringify({
                 action: "w_sub",
-                clicked_link: "tel:+971505136505",
+                clicked_link: "tel:+971504353451",
                 current_url: window.location.href,
                 ref_id: refId,
                 // current_time: formattedDate,
