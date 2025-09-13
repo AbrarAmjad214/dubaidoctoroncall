@@ -313,6 +313,32 @@ a.btn.btn-primary.px-4 {
     background-color: #FFBA08;
     border-color: #FFBA08;
 }
+/* CSS */
+.hero-section {
+  position: relative;
+  background: url('bg-hero.png') no-repeat center center/cover;
+  color: #fff; /* text white */
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* keep text above overlay */
+}
+@media (max-width: 825px) {
+  .hero-content{
+    padding: 50px 0 ;
+  }
+}
 </style>
 </head>
 
@@ -362,7 +388,7 @@ a.btn.btn-primary.px-4 {
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                         <li><a class="dropdown-item" href="./services/lab-at-home.html">Lab At Home</a></li>
                         <li><a class="dropdown-item" href="./services/nursing-care.html">Nursing Care</a></li>
-                        <li><a class="dropdown-item" href="./services/injection-services.html">Injection Services</a></li>
+                        <li><a class="dropdown-item" href="./services/injection-services.html">Medical Injection Therapy</a></li>
                         <li><a class="dropdown-item" href="./services/physiotherapy.html">Physiotherapy</a></li>
                         <li><a class="dropdown-item" href="./services/doctor-consultation.html">Doctor Consultation</a></li>
                         <li><a class="dropdown-item" href="./services/chronic-care.html">Chronic Care</a></li>
@@ -385,7 +411,7 @@ a.btn.btn-primary.px-4 {
             </nav>
         </div>
 
-        <div class="banner container h-100 mt-5 mb-5" >
+        <div class="hero-content banner banner-cont container h-100 mt-5" >
             <div class="row align-items-center h-100">
                 <div class="col-12 col-md-7 content">
                     <h1>
@@ -417,6 +443,18 @@ a.btn.btn-primary.px-4 {
                         <a onclick="togglePopupWhatsapp()" target="_blank" class="btn btn-custom svg-btn mt-3 mb-4 order-3 order-md-2"> 
                             <svg class="brand" xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
                                 <path d="M1.29621 30.2348C1.29479 35.377 2.6384 40.398 5.19324 44.8235L1.05188 59.9443L16.5261 55.8869C20.8061 58.2169 25.6015 59.4377 30.4746 59.4381H30.4874C46.5743 59.4381 59.6695 46.3477 59.6764 30.2579C59.6795 22.4612 56.6459 15.1297 51.1344 9.61392C45.6238 4.09859 38.2949 1.05959 30.4862 1.05603C14.3973 1.05603 1.30309 14.1457 1.29645 30.2348" fill="url(#paint0_linear_2201_585)"/>
+                                <path d="M0.254068 30.2254C0.252407 35.5526 1.64417 40.7532 4.2901 45.3372L0.000244141 61L16.0293 56.7972C20.4459 59.2052 25.4184 60.4748 30.4783 60.4767H30.4913C47.1555 60.4767 60.721 46.9154 60.7282 30.2496C60.731 22.1728 57.5883 14.5778 51.8799 8.86438C46.1708 3.15168 38.5798 0.00332106 30.4913 0C13.8244 0 0.26071 13.5594 0.254068 30.2254ZM9.79997 44.5477L9.20147 43.5977C6.68553 39.5972 5.35758 34.9743 5.35948 30.2273C5.3647 16.3749 16.6383 5.10494 30.5008 5.10494C37.2141 5.10779 43.5232 7.72478 48.2685 12.4729C53.0136 17.2216 55.6246 23.534 55.623 30.2477C55.6168 44.1001 44.343 55.3715 30.4913 55.3715H30.4814C25.9712 55.3691 21.5477 54.1579 17.6901 51.869L16.7721 51.3246L7.26008 53.8185L9.79997 44.5477Z" fill="url(#paint1_linear_2201_585)"/>
+                                <path d="M22.9341 17.5892C22.3681 16.3312 21.7724 16.3058 21.2341 16.2838C20.7934 16.2648 20.2895 16.2662 19.7862 16.2662C19.2823 16.2662 18.4637 16.4557 17.7717 17.2113C17.079 17.9675 15.1272 19.7951 15.1272 23.512C15.1272 27.229 17.8346 30.8214 18.212 31.326C18.5899 31.8296 23.4386 39.7015 31.1179 42.7298C37.5 45.2465 38.7987 44.7459 40.1839 44.6197C41.5692 44.494 44.654 42.7927 45.2833 41.0285C45.9132 39.2645 45.9132 37.7525 45.7243 37.4365C45.5355 37.1217 45.0317 36.9327 44.2761 36.555C43.5206 36.1774 39.806 34.3494 39.1135 34.0972C38.4209 33.8453 37.9172 33.7195 37.4134 34.476C36.9095 35.2313 35.4627 36.9327 35.0218 37.4365C34.5812 37.9416 34.1402 38.0044 33.3849 37.6265C32.6289 37.2475 30.1958 36.4506 27.3091 33.8771C25.0631 31.8745 23.5468 29.4015 23.106 28.645C22.6653 27.8897 23.0588 27.4802 23.4377 27.1038C23.7771 26.7652 24.1934 26.2215 24.5716 25.7806C24.9483 25.3393 25.074 25.0245 25.3259 24.5207C25.5781 24.0164 25.4519 23.5751 25.2633 23.1972C25.074 22.8194 23.6059 19.0829 22.9341 17.5892Z" fill="white"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_2201_585" x1="2932.28" y1="5889.88" x2="2932.28" y2="1.05603" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1FAF38"/>
+                                    <stop offset="1" stop-color="#60D669"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_2201_585" x1="3036.4" y1="6100" x2="3036.4" y2="0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F9F9F9"/>
+                                    <stop offset="1" stop-color="white"/>
+                                    </linearGradient>
+                                </defs>
                             </svg>
                             Book Your Care Now
                         </a>
@@ -635,7 +673,7 @@ a.btn.btn-primary.px-4 {
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h4 class="heading mb-4 mb-md-5">Bacora <span>24/7 Doctor On Call</span> Services</h4>
+                    <h4 class="heading mb-4 mb-md-5">Bacora <span>24/7 General Doctor Consultation</span> Services</h4>
                 </div>
             </div>
             <div class="row">
@@ -721,7 +759,7 @@ a.btn.btn-primary.px-4 {
                         <div class="details">
                             <div class="text">
                                 <div class="container">
-                                    <h5 class="section-title">INJECTION SERVICES</h5>
+                                    <h5 class="section-title">Medical Injection Therapy</h5>
                                     <p class="subtitle">Safe &amp; Hygienic Administration</p>
                                     <p class="covered">Covered Services:</p>
                                     <ul class="checkup-list">
@@ -1193,11 +1231,11 @@ a.btn.btn-primary.px-4 {
                     </div>
                     <div class="faq-item">
                         <div class="d-flex justify-content-between align-items-center">
-                            <span>Do you provide Injection Services at home?</span>
+                            <span>Do you provide Medical Injection Therapy at home?</span>
                             <i class="faq-icon fas fa-plus"></i>
                         </div>
                         <div class="faq-answer">
-                            Yes! Bacora offers safe, hygienic injection services at your doorstep, administered by DHA-certified nurses. From vitamin shots to prescribed medications, we ensure professional care in your home.
+                            Yes! Bacora offers safe, hygienic Medical Injection Therapy at your doorstep, administered by DHA-certified nurses. From vitamin shots to prescribed medications, we ensure professional care in your home.
                         </div>
                     </div>
                     <div class="faq-item">
@@ -1332,7 +1370,7 @@ a.btn.btn-primary.px-4 {
                     <ul class="list-unstyled footer-menu text-white">
                     <li><a href="./services/lab-at-home.html">Lab At Home</a></li>
                     <li><a href="./services/nursing-care.html">Nursing Care</a></li>
-                    <li><a href="./services/injection-services.html">Injection Services</a></li>
+                    <li><a href="./services/injection-services.html">Medical Injection Therapy</a></li>
                     <li><a href="./services/physiotherapy.html">Physiotherapy</a></li>
                     <li><a href="./services/doctor-consultation.html">Doctor Consultation</a></li>
                     <li><a href="./services/chronic-care.html">Chronic Care</a></li>
