@@ -2903,3 +2903,8 @@ button.navbar-toggler{
 .dropdown-menu.show{
     display: grid;
 }
+@media (max-width: 425px) {
+  .topbar{
+    display: none;
+  }
+}
