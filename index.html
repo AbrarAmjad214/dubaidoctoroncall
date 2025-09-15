@@ -422,25 +422,7 @@ a.btn.btn-primary.px-4 {
                     <div class="order-block order">
                         <div class="d-flex order-2 order-md-1">
                             <img loading="lazy" alt="Bacora logo" src="./doc_files/webp/sponser.webp" class="add-img"/>
-                            <div class="review-section">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                    <path d="M49.1839 19.9697H47.1835V19.8667H24.8336V29.8H38.8681C36.8206 35.5824 31.3188 39.7333 24.8336 39.7333C16.605 39.7333 9.93357 33.0618 9.93357 24.8333C9.93357 16.6048 16.605 9.93333 24.8336 9.93333C28.6318 9.93333 32.0874 11.3662 34.7185 13.7067L41.7426 6.68264C37.3073 2.54914 31.3747 0 24.8336 0C11.1194 0 0.000244141 11.1191 0.000244141 24.8333C0.000244141 38.5475 11.1194 49.6666 24.8336 49.6666C38.5478 49.6666 49.6669 38.5475 49.6669 24.8333C49.6669 23.1682 49.4955 21.5429 49.1839 19.9697Z" fill="#FFC107"/>
-                                    <path d="M2.86353 13.2746L11.0225 19.2582C13.2302 13.7924 18.5768 9.93333 24.8336 9.93333C28.6318 9.93333 32.0874 11.3662 34.7185 13.7067L41.7426 6.68264C37.3073 2.54914 31.3747 0 24.8336 0C15.2951 0 7.02311 5.3851 2.86353 13.2746Z" fill="#FF3D00"/>
-                                    <path d="M24.8338 49.6666C31.2483 49.6666 37.0766 47.2118 41.4833 43.2199L33.7974 36.716C31.2208 38.6767 28.0716 39.7368 24.8338 39.7333C18.3747 39.7333 12.8902 35.6147 10.8241 29.867L2.72595 36.1064C6.83587 44.1486 15.1823 49.6666 24.8338 49.6666Z" fill="#4CAF50"/>
-                                    <path d="M49.184 19.9697H47.1837V19.8666H24.8337V29.8H38.8683C37.8889 32.552 36.1246 34.9568 33.7936 36.7173L33.7973 36.7148L41.4832 43.2186C40.9394 43.7128 49.6671 37.25 49.6671 24.8333C49.6671 23.1682 49.4957 21.5429 49.184 19.9697Z" fill="#1976D2"/>
-                                </svg>
-                                <div class="avatar-list d-flex">
-                                    <img loading="lazy" src="doc_files/webp/r1.webp" class="avatar" alt="">
-                                    <img loading="lazy" src="doc_files/webp/r2.webp" class="avatar" alt="">
-                                    <img loading="lazy" src="doc_files/webp/r3.webp" class="avatar d-none d-md-block" alt="">
-                                    <img loading="lazy" src="doc_files/webp/r4.webp" class="avatar d-none d-md-block" alt="">
-                                    <span class="review-badge avatar">5K+</span>
-                                </div>
-                                <div class="stars ml-0 ml-md-2">
-                                    ★★★★★
-                                    <div class="review-text">Trusted by Families (4.9 of 5)</div>
-                                </div>
-                            </div>
+                           
                         </div>
                         <a onclick="togglePopupWhatsapp()" target="_blank" class="btn btn-custom svg-btn mt-3 mb-4 order-3 order-md-2"> 
                             <svg class="brand" xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
@@ -1064,142 +1046,121 @@ a.btn.btn-primary.px-4 {
                     </a>
                 </div>
             </div>
-            <div class="testimonial-wrapper owl-carousel owl-theme" id="testimonialWrapper">
-                <div class="testimonial-card">
-                    <div class="d-flex align-items-center justify-content-between">
+            <section class="testimonials py-5 bg-light">
+                <div class="container">
+                    <div class="text-center mb-5">
+                    <h2 class="fw-bold">What Our Patients Say</h2>
+                    <p class="text-muted">Real feedback from our happy clients</p>
+                    </div>
+
+                    <div class="testimonial-wrapper owl-carousel owl-theme" id="testimonialWrapper">
+
+                    <!-- Review 1 -->
+                    <div class="testimonial-card p-4 bg-white shadow-sm rounded-3">
+                        <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
-                            <img loading="lazy" src="./doc_files/webp/testimonial1.webp" alt="Portrait of John Doe">
+                            <img loading="lazy" src="./doc_files/webp/testimonial1.webp" alt="Ali Khan" class="rounded-circle" width="60" height="60">
                             <div class="ms-3">
-                                <div class="name">Muhammad Ehsan</div>
-                                <div class="text-muted">February 12, 2024</div>
+                            <div class="fw-bold">Ali Khan</div>
+                            <div class="text-muted small">August 20, 2024</div>
                             </div>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C16.8272 16.8285 14.6117 18.5 12.0002 18.5C8.68674 18.5 6.00024 15.8135 6.00024 12.5C6.00024 9.1865 8.68674 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C6.47774 2.5 2.00024 6.9775 2.00024 12.5C2.00024 18.0225 6.47774 22.5 12.0002 22.5C17.5227 22.5 22.0002 18.0225 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#FFC107"/>
-                                <path d="M3.1532 7.8455L6.4387 10.255C7.3277 8.054 9.4807 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C8.1592 2.5 4.8282 4.6685 3.1532 7.8455Z" fill="#FF3D00"/>
-                                <path d="M12.0003 22.4999C14.5833 22.4999 16.9303 21.5114 18.7048 19.9039L15.6098 17.2849C14.5722 18.0744 13.3041 18.5013 12.0003 18.4999C9.39928 18.4999 7.19078 16.8414 6.35878 14.5269L3.09778 17.0394C4.75278 20.2779 8.11378 22.4999 12.0003 22.4999Z" fill="#4CAF50"/>
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C17.2573 15.6082 16.5469 16.5766 15.6082 17.2855L15.6097 17.2845L18.7047 19.9035C18.4857 20.1025 22.0002 17.5 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#1976D2"/>
-                            </svg>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="text mt-3">
+                        Excellent service! The doctor arrived on time and provided professional care. The staff followed up regularly to ensure my recovery was smooth. Highly recommended.
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    
-                    <div class="text mt-3">
-                        I had a truly wonderful experience working with Ritu. She is not only highly professional and knowledgeable, but also incredibly kind, patient, and attentive to every detail. Her dedication to her work and the genuine care she shows make a real difference. Ritu consistently goes above and beyond to ensure everything runs smoothly and that clients feel comfortable and well taken care of. It's rare to come across someone who combines expertise with such a warm and compassionate approach. I'm genuinely grateful for her support and highly recommend her without hesitation.
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="d-flex align-items-center justify-content-between">
+
+                    <!-- Review 2 -->
+                    <div class="testimonial-card p-4 bg-white shadow-sm rounded-3">
+                        <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
-                            <img loading="lazy" src="./doc_files/webp/testimonial2.webp" alt="Portrait of John Doe">
+                            <img loading="lazy" src="./doc_files/webp/testimonial2.webp" alt="Fatima Zahra" class="rounded-circle" width="60" height="60">
                             <div class="ms-3">
-                                <div class="name">Cristina Gabriela</div>
-                                <div class="text-muted">October 5, 2023</div>
+                            <div class="fw-bold">Fatima Zahra</div>
+                            <div class="text-muted small">July 15, 2024</div>
                             </div>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C16.8272 16.8285 14.6117 18.5 12.0002 18.5C8.68674 18.5 6.00024 15.8135 6.00024 12.5C6.00024 9.1865 8.68674 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C6.47774 2.5 2.00024 6.9775 2.00024 12.5C2.00024 18.0225 6.47774 22.5 12.0002 22.5C17.5227 22.5 22.0002 18.0225 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#FFC107"/>
-                                <path d="M3.1532 7.8455L6.4387 10.255C7.3277 8.054 9.4807 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C8.1592 2.5 4.8282 4.6685 3.1532 7.8455Z" fill="#FF3D00"/>
-                                <path d="M12.0003 22.4999C14.5833 22.4999 16.9303 21.5114 18.7048 19.9039L15.6098 17.2849C14.5722 18.0744 13.3041 18.5013 12.0003 18.4999C9.39928 18.4999 7.19078 16.8414 6.35878 14.5269L3.09778 17.0394C4.75278 20.2779 8.11378 22.4999 12.0003 22.4999Z" fill="#4CAF50"/>
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C17.2573 15.6082 16.5469 16.5766 15.6082 17.2855L15.6097 17.2845L18.7047 19.9035C18.4857 20.1025 22.0002 17.5 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#1976D2"/>
-                            </svg>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="text mt-3">
+                        The nurses were kind and professional. They explained everything clearly and made me feel comfortable. Truly caring team, I’m very satisfied.
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    
-                    <div class="text mt-3">
-                        تتجلى طيبة الفريق من خلال خلق بيئة مريحة. إن تفانيهم في رعاية المرضى جدير بالتقدير. لقد أظهرت درجة التحضير التزامًا بالتميز. ساعدت هذه التجربة الإيجابية في تعزيز الثقة والراحة. إن هذا الاحتراف يستحق التقدير والاعتراف. من الواضح أن الفريق يبذل جهدًا إضافيًا لتقديم رعاية استثنائية. إن نهجهم الرحيم يحدث فرقًا كبيرًا. شكر خاص للممرضة أنشو.
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="d-flex align-items-center justify-content-between">
+
+                    <!-- Review 3 -->
+                    <div class="testimonial-card p-4 bg-white shadow-sm rounded-3">
+                        <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
-                            <img loading="lazy" src="./doc_files/webp/testimonial3.webp" alt="Portrait of John Doe">
+                            <img loading="lazy" src="./doc_files/webp/testimonial3.webp" alt="James Robert" class="rounded-circle" width="60" height="60">
                             <div class="ms-3">
-                                <div class="name">Gautam Vasisht</div>
-                                <div class="text-muted">May 5, 2023</div>
+                            <div class="fw-bold">James Robert</div>
+                            <div class="text-muted small">June 5, 2024</div>
                             </div>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C16.8272 16.8285 14.6117 18.5 12.0002 18.5C8.68674 18.5 6.00024 15.8135 6.00024 12.5C6.00024 9.1865 8.68674 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C6.47774 2.5 2.00024 6.9775 2.00024 12.5C2.00024 18.0225 6.47774 22.5 12.0002 22.5C17.5227 22.5 22.0002 18.0225 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#FFC107"/>
-                                <path d="M3.1532 7.8455L6.4387 10.255C7.3277 8.054 9.4807 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C8.1592 2.5 4.8282 4.6685 3.1532 7.8455Z" fill="#FF3D00"/>
-                                <path d="M12.0003 22.4999C14.5833 22.4999 16.9303 21.5114 18.7048 19.9039L15.6098 17.2849C14.5722 18.0744 13.3041 18.5013 12.0003 18.4999C9.39928 18.4999 7.19078 16.8414 6.35878 14.5269L3.09778 17.0394C4.75278 20.2779 8.11378 22.4999 12.0003 22.4999Z" fill="#4CAF50"/>
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C17.2573 15.6082 16.5469 16.5766 15.6082 17.2855L15.6097 17.2845L18.7047 19.9035C18.4857 20.1025 22.0002 17.5 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#1976D2"/>
-                            </svg>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="text mt-3">
+                        Very quick response and professional doctor visit at home. Thanks to Bacora team for making healthcare so easy and accessible in Dubai.
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <div class="text mt-3">
-                        Dr Abana and Nurse Jyoti Sharma are very helpful and provided me the excellent treatment in a short period of time. I really appreciate their help and timely treatment as I am able to catch a flight due to them. God bless them and keep the good work up.
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="d-flex align-items-center justify-content-between">
+
+                    <!-- Review 4 -->
+                    <div class="testimonial-card p-4 bg-white shadow-sm rounded-3">
+                        <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
-                            <img loading="lazy" src="./doc_files/webp/testimonial2.webp" alt="Portrait of John Doe">
+                            <img loading="lazy" src="./doc_files/webp/r4.webp" alt="Maria Gomez" class="rounded-circle" width="60" height="60">
                             <div class="ms-3">
-                                <div class="name">Ahmad Sibousi</div>
-                                <div class="text-muted">October 5, 2023</div>
+                            <div class="fw-bold">Maria Gomez</div>
+                            <div class="text-muted small">May 10, 2024</div>
                             </div>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C16.8272 16.8285 14.6117 18.5 12.0002 18.5C8.68674 18.5 6.00024 15.8135 6.00024 12.5C6.00024 9.1865 8.68674 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C6.47774 2.5 2.00024 6.9775 2.00024 12.5C2.00024 18.0225 6.47774 22.5 12.0002 22.5C17.5227 22.5 22.0002 18.0225 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#FFC107"/>
-                                <path d="M3.1532 7.8455L6.4387 10.255C7.3277 8.054 9.4807 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C8.1592 2.5 4.8282 4.6685 3.1532 7.8455Z" fill="#FF3D00"/>
-                                <path d="M12.0003 22.4999C14.5833 22.4999 16.9303 21.5114 18.7048 19.9039L15.6098 17.2849C14.5722 18.0744 13.3041 18.5013 12.0003 18.4999C9.39928 18.4999 7.19078 16.8414 6.35878 14.5269L3.09778 17.0394C4.75278 20.2779 8.11378 22.4999 12.0003 22.4999Z" fill="#4CAF50"/>
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C17.2573 15.6082 16.5469 16.5766 15.6082 17.2855L15.6097 17.2845L18.7047 19.9035C18.4857 20.1025 22.0002 17.5 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#1976D2"/>
-                            </svg>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="text mt-3">
+                        The physiotherapy sessions helped me recover faster. The team is punctual, polite, and very professional. I will surely recommend their services to others.
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    
-                    <div class="text mt-3">
-                        الدكتورة سامرين رائعة حقًا! إنها تعرف تمامًا ما تحتاجه، وقد اختارت لي محلول الوريد المثالي. شعرت بتحسن كبير بعد ذلك، وكان بالضبط ما أحتاجه. ممتن جدًا لرعايتها ولمساعدة الممرضة أمان.
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="d-flex align-items-center justify-content-between">
+
+                    <!-- Review 5 -->
+                    <div class="testimonial-card p-4 bg-white shadow-sm rounded-3">
+                        <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
-                            <img loading="lazy" src="./doc_files/webp/testimonial2.webp" alt="Portrait of John Doe">
+                            <img loading="lazy" src="./doc_files/webp/r2.webp" alt="Ahmed Raza" class="rounded-circle" width="60" height="60">
                             <div class="ms-3">
-                                <div class="name">Radi Assenova</div>
-                                <div class="text-muted">October 5, 2023</div>
+                            <div class="fw-bold">Ahmed Raza</div>
+                            <div class="text-muted small">April 2, 2024</div>
                             </div>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C16.8272 16.8285 14.6117 18.5 12.0002 18.5C8.68674 18.5 6.00024 15.8135 6.00024 12.5C6.00024 9.1865 8.68674 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C6.47774 2.5 2.00024 6.9775 2.00024 12.5C2.00024 18.0225 6.47774 22.5 12.0002 22.5C17.5227 22.5 22.0002 18.0225 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#FFC107"/>
-                                <path d="M3.1532 7.8455L6.4387 10.255C7.3277 8.054 9.4807 6.5 12.0002 6.5C13.5297 6.5 14.9212 7.077 15.9807 8.0195L18.8092 5.191C17.0232 3.5265 14.6342 2.5 12.0002 2.5C8.1592 2.5 4.8282 4.6685 3.1532 7.8455Z" fill="#FF3D00"/>
-                                <path d="M12.0003 22.4999C14.5833 22.4999 16.9303 21.5114 18.7048 19.9039L15.6098 17.2849C14.5722 18.0744 13.3041 18.5013 12.0003 18.4999C9.39928 18.4999 7.19078 16.8414 6.35878 14.5269L3.09778 17.0394C4.75278 20.2779 8.11378 22.4999 12.0003 22.4999Z" fill="#4CAF50"/>
-                                <path d="M21.8057 10.5415H21.0002V10.5H12.0002V14.5H17.6517C17.2573 15.6082 16.5469 16.5766 15.6082 17.2855L15.6097 17.2845L18.7047 19.9035C18.4857 20.1025 22.0002 17.5 22.0002 12.5C22.0002 11.8295 21.9312 11.175 21.8057 10.5415Z" fill="#1976D2"/>
-                            </svg>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="text mt-3">
+                        I needed urgent care late at night and Bacora’s doctor came quickly. Very professional and caring service. Truly a lifesaver for me and my family.
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                    <!-- Review 6 -->
+                    <div class="testimonial-card p-4 bg-white shadow-sm rounded-3">
+                        <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img loading="lazy" src="./doc_files/webp/r1.webp" alt="Sophia Lee" class="rounded-circle" width="60" height="60">
+                            <div class="ms-3">
+                            <div class="fw-bold">Sophia Lee</div>
+                            <div class="text-muted small">March 12, 2024</div>
+                            </div>
+                        </div>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="text mt-3">
+                        Bacora provided nursing care for my father. The nurses were compassionate and attentive, making the whole experience stress-free. Truly grateful for their service.
+                        </div>
                     </div>
-                    
-                    <div class="text mt-3">
-                        تجربة جيدة مع جميع موظفي الشركة - ريمليا، وموظفي المبيعات، ومع ذلك، كان أبرز ما في تجربتنا هو الممرضة سميرة التي قمنا بتوظيفها في أول تجربة لنا مع خدمة الرعاية المنزلية في دبي. هي ممرضة شابة، محترفة وذات ذكاء عاطفي عالي، تتمتع بخبرة جيدة، وكانت قادرة على التكيف بسرعة مع روتيننا، ومتابعة علاج الأدوية دون تقصير، ومرافقة المريض المسن في جميع الأوقات. لم تفوت يومًا واحدًا، ولم تكن فقط دقيقة في مواعيدها بل كانت تصل قبل بدء نوبتها، وكانت مرنة عندما كنا بحاجة إليها للعمل في وردية ليلية. يمكنني التوصية بشدة بمهاراتها التمريضية، وشخصيتها الودية، وموقفها الإيجابي في جميع الأوقات. أي عميل رعاية منزلية يستطيع توظيف سميرة كممرضة لهم، سيكون ممتنًا لأنه وجدها.
+
                     </div>
                 </div>
-            </div>
+            </section>
+
         </div>
     </section>
     <!-- Faq's -->
@@ -1297,7 +1258,7 @@ a.btn.btn-primary.px-4 {
                 <!-- <h6 class="heading mb-5 text-center">
                     <p>24/7 Doctor on Call Services in Dubai</h6> -->
                 <div class="our-team-wrapper">
-                    <h2>24/7 Doctor on Call Services in Dubai</h2>
+                    <h4 class="heading text-center"><span>24/7</span> Doctor on Call Services in Dubai</h4>
                     <p>Healthcare has evolved to meet the demands of busy lives, and now, you can access professional medical care right at your doorstep.<span id="dots">...</span>
                     <span id="more">Our doctor on call services provide fast, reliable, and convenient care for residents across Dubai. Whether you are searching for a doctor on call near me or need a doctor at my home, our trained physicians ensure timely visits and comprehensive healthcare. From routine checkups to urgent treatment, a doctor on call Dubai brings medical expertise directly to you. Scheduling a doctor home visit Dubai has never been easier with our trusted network of professionals.
                     Our doctor on call services in Dubai are designed to offer complete peace of mind. If you want a doctor at home Dubai, a home doctor Dubai is available to provide personalized care in the comfort of your home. Families and individuals looking for a doctor at home in Dubai can rely on our qualified team for a fast response. You can simply call doctor to get immediate access to medical assistance, including an emergency doctor at home when urgent attention is needed.
