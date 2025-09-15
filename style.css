@@ -2151,7 +2151,7 @@
 }
 
 .call-btn {
-  background: #0D2441;
+  background: linear-gradient(90deg, #0D2441 0%, #004296 100%);
   color: white;
 }
 
@@ -2746,7 +2746,7 @@
     }
     .faq-item h4 {
       margin-bottom: 8px;
-      color: #0D2441;
+      color: #f7f7f7;
     }
 
     .book-strip {
@@ -2984,4 +2984,9 @@ button.navbar-toggler{
 .header.scrolled svg path{
     fill: #fff;
 
+}
+.small a{
+  color: #FFBA08;
+  font-size: 16px;
+  font-weight: 700;
 }
