@@ -2971,7 +2971,7 @@ button.navbar-toggler{
   display: inline-block;
   padding: 10px 20px;
   background: #fff;
-  color: #000;
+  color: #ffffffff;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
