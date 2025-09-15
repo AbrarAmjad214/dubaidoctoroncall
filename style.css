@@ -5,7 +5,7 @@
       --dark-blue: #050a28;
       --stats-bg: #2a2f48;
       --stats-dark: #1a1f38;
-      --whatsapp-green: #19591f;
+      --whatsapp-green: #FFBA08;
       --whatsapp-dark-green: #0D2441;
     }
 
@@ -79,7 +79,7 @@
     }
 
     .desktop-call-btn {
-      background-color: #19591f;
+      background-color: #FFBA08;
       color: white;
       border: none;
       padding: 10px 20px;
@@ -106,7 +106,7 @@
     }
 
     .text-highlight {
-      color: #19591f;
+      color: #FFBA08;
       position: relative;
       display: inline-block;
     }
@@ -217,7 +217,7 @@
     }
 
     .floating-btn.phone {
-      background: linear-gradient(135deg, #19591f, #19591f);
+      background: linear-gradient(135deg, #FFBA08, #FFBA08);
     }
 
     .floating-btn .tooltip {
@@ -301,7 +301,7 @@
       margin: 0;
       font-size: 28px;
       font-weight: 700;
-      color: #19591f;
+      color: #FFBA08;
       text-shadow: 0 2px 5px rgba(29, 183, 255, 0.3);
     }
     
@@ -483,7 +483,7 @@
   
   .square-badge i {
     font-size: 22px;
-    color: #19591f;
+    color: #FFBA08;
     margin-bottom: 8px;
     transition: all 0.3s ease;
   }
@@ -556,7 +556,7 @@
 }
 
 .bacora-ultimate-section h2 span {
-  color: #19591f;
+  color: #FFBA08;
   background: rgba(0, 140, 255, 0.1);
   padding: 2px 6px;
   border-radius: 6px;
@@ -587,7 +587,7 @@
 }
 
 .features-grid i {
-  background: linear-gradient(to right, #19591f, #19591f);
+  background: linear-gradient(to right, #FFBA08, #FFBA08);
   color: #fff;
   padding: 10px;
   border-radius: 50%;
@@ -600,7 +600,7 @@
   border-radius: 50px;
   font-weight: 600;
   color: #fff;
-  background: #19591f;
+  background: #FFBA08;
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255,255,255,0.2);
   text-decoration: none;
@@ -609,7 +609,7 @@
 }
 
 .glass-btn:hover {
-  background: #19591f;
+  background: #FFBA08;
   transform: scale(1.05);
 }
 
@@ -660,7 +660,7 @@
   left: -50px;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, #19591f22 0%, transparent 70%);
+  background: radial-gradient(circle, #FFBA0822 0%, transparent 70%);
   border-radius: 50%;
   z-index: -1;
 }
@@ -762,11 +762,11 @@
     }
 
     .call-btn {
-      background-color: #19591f;
+      background-color: #FFBA08;
     }
 
     .call-btn:hover {
-      background-color: #19591f;
+      background-color: #FFBA08;
     }
 
     .whatsapp-btn {
@@ -1183,7 +1183,7 @@
 }
 
 .cta-button.whatsapp {
-  background-color: #19591f;
+  background-color: #FFBA08;
   color: white;
 }
 
@@ -1436,12 +1436,12 @@
 }
 
 #bacora-appointment .bacora-whatsapp-btn {
-  background: linear-gradient(135deg, #19591f 0%, #0D2441 100%);
+  background: linear-gradient(135deg, #FFBA08 0%, #0D2441 100%);
   box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
 }
 
 #bacora-appointment .bacora-call-btn {
-  background: linear-gradient(135deg, #19591f 0%, #19591f 100%);
+  background: linear-gradient(135deg, #FFBA08 0%, #FFBA08 100%);
   box-shadow: 0 5px 15px rgba(255, 34, 34, 0.3);
 }
 
@@ -2027,7 +2027,7 @@
 }
 
 #bacora-faq .bacora-whatsapp-btn {
-  background: #19591f;
+  background: #FFBA08;
   color: white;
   box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
 }
@@ -2397,7 +2397,7 @@
 }
 
 .bacora-whatsapp-btn {
-  background-color: #19591f;
+  background-color: #FFBA08;
   color: white;
   padding: 12px 15px;
   border-radius: 8px;
@@ -2515,10 +2515,10 @@
       color: #fff;
     }
     .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-      color: #19591f !important;
+      color: #FFBA08 !important;
     }
     .navbar .nav-link:hover {
-      color: #19591f;
+      color: #FFBA08;
     }
 
     .sticky-header {
@@ -2597,7 +2597,7 @@
     }
     .section-title h2 {
       font-weight: bold;
-      color: #19591f;
+      color: #FFBA08;
     }
     .service-image {
       border-radius: 10px;
@@ -2674,11 +2674,11 @@
     .hero h1 { font-size: 3rem; margin-bottom: 15px; }
     .hero p  { font-size: 1.3rem; margin-bottom: 20px; max-width: 700px; margin-left:auto; margin-right:auto; }
     .btn-cta {
-      background: #19591f; color: #fff; padding: 15px 35px;
+      background: #FFBA08; color: #fff; padding: 15px 35px;
       border-radius: 30px; text-decoration: none; font-weight: bold;
       transition: 0.3s;
     }
-    .btn-cta:hover { background: #19591f; }
+    .btn-cta:hover { background: #FFBA08; }
 
     .section { padding: 70px 0; }
     .section h2 {  font-size: 2.4rem; margin-bottom: 40px; color: #0D2441; }
@@ -2725,7 +2725,7 @@
     }
     .benefit-card i {
       font-size: 2.5rem;
-      color: #19591f;
+      color: #FFBA08;
       margin-bottom: 12px;
     }
 
@@ -2751,7 +2751,7 @@
 
     .book-strip {
       text-align: center;
-      background: linear-gradient(90deg, #19591f, #0D2441);
+      background: linear-gradient(90deg, #FFBA08, #0D2441);
       color: #fff;
       padding: 60px 20px;
     }
@@ -2790,7 +2790,7 @@
 
   .package-card i {
     font-size: 42px;
-    color: #19591f;
+    color: #FFBA08;
     margin-bottom: 15px;
     display: block;
   }
@@ -2811,8 +2811,8 @@
     background: linear-gradient(90deg, #0D2441 0%, #1A55A1 100%) !important;
   }
   a.btn.btn-primary.px-4{
-    background-color: #19591f;
-    border-color: #19591f;
+    background-color: #FFBA08;
+    border-color: #FFBA08;
   }
  
 /* Topbar default (desktop) */
