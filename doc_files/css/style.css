@@ -66,7 +66,7 @@ body {
 .yellow-btn{
     display: inline-block;
     border-radius: 25px;
-    background: #19591f;
+    background: #FFBA08;
     /* box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.42); */
     color: #fff;
     font-size: 12px;
@@ -79,7 +79,7 @@ body {
 }
 .yellow-btn:hover{
     transform: translateY(-2px);
-    background: #19591f;
+    background: #FFBA08;
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.42);
     /* background: linear-gradient(90deg, #F8BC3B 0%, #FFDF9C 48.08%, #F8BC3B 100%); */
     color: #fff;
@@ -1779,7 +1779,7 @@ body {
 }
 
 .whatsapp-btn {
-  background: #19591f;
+  background: #FFBA08;
   color: white;
 }
 
@@ -1852,8 +1852,4 @@ footer {
   border-radius: 25px;
   padding: 8px 18px;
   font-weight: 500;
-}
-.bacora-footer .footer-logo{
-  max-width: 100px !important;
-  max-height: 100px !important;
 }

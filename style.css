@@ -770,7 +770,7 @@
     }
 
     .whatsapp-btn {
-      background-color: #19591f;
+      background-color: #FFBA08;
     }
 
     .whatsapp-btn:hover {
@@ -2156,7 +2156,7 @@
 }
 
 .whatsapp-btn {
-  background: #19591f;
+  background: #FFBA08;
   color: white;
 }
 
@@ -2913,4 +2913,75 @@ button.navbar-toggler{
 .bacora-footer .footer-logo{
   max-width: 100px !important;
   max-height: 100px !important;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* padding: 20px 50px; */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.header .nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.hero-content {
+  margin-top: 100px; /* space under header */
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header.scrolled {
+    background: linear-gradient(90deg, #0D2441 0%, #1A55A1 100%) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header.scrolled svg path{
+    fill: #fff;
+
 }
