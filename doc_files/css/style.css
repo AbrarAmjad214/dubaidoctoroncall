@@ -757,7 +757,7 @@ body {
     flex-direction: column;
 }
 .services .service-card .content .details .text{
-    min-height: 390px;
+    min-height: 315px;
 }
 .services .service-card .content .details .text img{
     width: 100%;
