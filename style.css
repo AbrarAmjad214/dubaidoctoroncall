@@ -2762,7 +2762,7 @@
     .book-strip a {
       display: inline-block;
       margin-top: 15px;
-      background: #fff; color: #0D2441;
+      background: #FFBA08; color: #0D2441;
       padding: 15px 40px;
       border-radius: 30px;
       font-weight: bold;
@@ -2770,7 +2770,7 @@
       transition: 0.3s;
     }
     .book-strip a:hover {
-      background: #eee;
+      background: #FFBA08;
     }
 
     footer {
