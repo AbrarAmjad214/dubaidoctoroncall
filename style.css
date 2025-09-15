@@ -2128,7 +2128,7 @@
 }
 
 .footer-address i {
-  color: #0D2441;
+  color: #ffffff;
 }
 
 .footer-actions {
@@ -2711,16 +2711,17 @@
       width: 100%;
     }
     .benefit-card {
-      background: #e8f5e9;
+      background: linear-gradient(90deg, #0D2441 0%, #1A55A1 100%) !important;
       padding: 25px;
       border-radius: 12px;
       text-align: center;
       transition: 0.3s;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      color: #fff;
     }
     .benefit-card:hover {
       transform: translateY(-5px);
-      background: #c8e6c9;
+      background:  #0D2441 !important;
     }
     .benefit-card i {
       font-size: 2.5rem;
@@ -2773,7 +2774,8 @@
     }
 
     footer {
-      background: #0D2441; color: #ccc;
+      background: linear-gradient(90deg, #0D2441 0%, #1A55A1 100%);; 
+      color: #ccc;
       text-align: center; padding: 25px;
       font-size: 0.9rem;
     }
@@ -2806,7 +2808,7 @@
   }
 
   .bg-white{
-    background-color: #0D2441 !important;
+    background: linear-gradient(90deg, #0D2441 0%, #1A55A1 100%) !important;
   }
   a.btn.btn-primary.px-4{
     background-color: #FFBA08;
@@ -2907,4 +2909,8 @@ button.navbar-toggler{
   .topbar{
     display: none;
   }
+}
+.bacora-footer .footer-logo{
+  max-width: 100px !important;
+  max-height: 100px !important;
 }
