@@ -16,409 +16,412 @@
   <link href="doc_files/css/animate.css" rel="stylesheet" />
   <link href="doc_files/css/style.css" rel="stylesheet" />
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N8HD8VRQ');</script>
-  <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17527157439">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17527157439');
+    </script>
    
-<style>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+    .whatsapp-widget {
+            position: fixed;
+            bottom: 20px; /* adjust vertical position */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999; /* make sure it's above other elements */
+        }
+
+        #whatsapp-popup {
+            position: fixed;
+            bottom: 67px;
+            right: 60px;
+            width: 316px;
+            /* background: white; */
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 9999;
+            font-family: sans-serif;
+        }
+
+        #whatsapp-popup-header {
+            /*background: #075e54;*/
+            color: white;
+            /*padding: 10px;*/
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        #whatsapp-popup-body {
+            padding: 15px;
+            background: #ece5dd;
+            font-size: 14px;
+        }
+    .chat-widget {
+        width: 320px;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
+    }
+    .header1 {
+        background-color: #007961;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+        position: relative;
+    }
+    .header1 .logo-container {
+        position: relative;
+        flex-shrink: 0;
+    }
+    .header1 .logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
+    .header1 .online-indicator {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 14px;
+        height: 14px;
+        background-color: #00c851;
+        border: 2.5px solid #007961;
+        border-radius: 50%;
+    }
+    .header1 .text-container {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.2;
+    }
+    .header1 .text-container .subtitle {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        margin-top: 2px;
+    }
+    .header1 .close-btn {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.75rem;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        line-height: 1;
+    }
+
+        .header1 .close-btns {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.75rem;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        line-height: 1;
+    }
     
-    @import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
-   .whatsapp-widget {
+    .body {
+        background-color: #f5f5f5;
+        padding: 1.25rem 1rem 1.5rem;
+        color: #4a4a4a;
+        font-size: 13px;
+        line-height: 1.4;
+        background-image:
+        url("https://static.elfsight.com/apps/all-in-one-chat/patterns/background-whatsapp.jpg");
+        background-repeat: repeat;
+        background-size: 40px 40px;
+            height: 357px;
+    }
+    .message-box {
+        background: white;
+        border-radius: 0.75rem;
+        padding: 1rem;
+        max-width: 280px;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+            font-size: 15px;
+        line-height: 33px;
+        overflow: hidden;
+    }
+    
+    .message-box p {
+        margin: 0 0 0.5rem 0;
+    }
+    .message-box p.bold {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+        .message-box p:last-child {
+        margin-bottom: 0;
+    }
+    .whatsapp-btn {
+        margin-top: 3.25rem;
+        width: 100%;
+        background-color: #25d366;
+        border: none;
+        border-radius: 9999px;
+        padding: 0.75rem 0;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        transition: background-color 0.2s ease;
+    }
+    .whatsapp-btn:hover {
+        background-color: #1ebe5b;
+    }
+    .whatsapp-icon {
+        font-size: 20px;
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 26px;
+    }
+    /* WhatsApp icon SVG */
+    .whatsapp-icon svg {
+        fill: white;
+        width: 20px;
+        height: 31px;
+    }
+    
+    .time-popup {
+        text-align: center;
+        /* font-weight: 800; */
+        font-size: 10px;
+        position: relative;
+        opacity: 0.3;
+        color: rgb(17, 17, 17);
+    }
+
+
+    .call-btn {
+    background-color: #0052cc;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    }
+
+    .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 78px;;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    }
+
+    .call-link {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #f1f5f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #30688F;
+    text-decoration: none;
+    font-size: 18px;
+    }
+
+    .subtext {
+    font-size: 12px;
+    color: gray;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    }
+
+    .close-btn {
+    background: #e9ebef;
+        color: #121111;
+        border: none;
+        border-radius: 50%;
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        bottom: 53px;
+        left: 70%;
+        transform: translateX(-50%);
+    cursor: pointer;
+    }
+    .whatsapp-widget {
         position: fixed;
         bottom: 20px; /* adjust vertical position */
         left: 50%;
         transform: translateX(-50%);
         z-index: 9999; /* make sure it's above other elements */
     }
-
-    #whatsapp-popup {
-        position: fixed;
-        bottom: 67px;
-        right: 60px;
-        width: 316px;
-        /* background: white; */
-        border-radius: 12px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-        display: none;
-        z-index: 9999;
-        font-family: sans-serif;
+    #more {display: none;}
+    .navbar-expand-lg .navbar-nav .nav-link{
+        color: #ece5dd;
     }
 
-    #whatsapp-popup-header {
-        /*background: #075e54;*/
-        color: white;
-        /*padding: 10px;*/
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
+    .list-unstyled a{
+    color: #f0f7ff !important;
+    text-decoration:none;
     }
-
-    #whatsapp-popup-body {
-        padding: 15px;
-        background: #ece5dd;
-        font-size: 14px;
+    .navbar-toggler{
+        color: #fff !important;
+        background-color: #fff;
     }
-  .chat-widget {
-    width: 320px;
-    border-radius: 1rem;
+    .dropdown-menu.show{
+        display: grid;
+    }
+    a.btn.btn-primary.px-4 {
+        background-color: #FFBA08;
+        border-color: #FFBA08;
+    }
+    /* CSS */
+    .hero-section {
+    position: relative;
+    background: url('bg-hero.png') no-repeat center center/cover;
+    color: #fff; /* text white */
     overflow: hidden;
-    box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
-  }
-  .header1 {
-    background-color: #007961;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
-    position: relative;
-  }
-  .header1 .logo-container {
-    position: relative;
-    flex-shrink: 0;
-  }
-  .header1 .logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-  }
-  .header1 .online-indicator {
+    }
+
+    .hero-section::before {
+    content: "";
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 14px;
-    height: 14px;
-    background-color: #00c851;
-    border: 2.5px solid #007961;
-    border-radius: 50%;
-  }
-  .header1 .text-container {
-    display: flex;
-    flex-direction: column;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 1.2;
-  }
-  .header1 .text-container .subtitle {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    margin-top: 2px;
-  }
-  .header1 .close-btn {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.75rem;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    line-height: 1;
-  }
+    inset: 0; /* top:0; right:0; bottom:0; left:0 */
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    pointer-events: none;
+    }
 
-    .header1 .close-btns {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.75rem;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    line-height: 1;
-  }
-  
-  .body {
-    background-color: #f5f5f5;
-    padding: 1.25rem 1rem 1.5rem;
-    color: #4a4a4a;
-    font-size: 13px;
-    line-height: 1.4;
-    background-image:
-      url("https://static.elfsight.com/apps/all-in-one-chat/patterns/background-whatsapp.jpg");
-    background-repeat: repeat;
-    background-size: 40px 40px;
-        height: 357px;
-  }
-  .message-box {
-    background: white;
-    border-radius: 0.75rem;
-    padding: 1rem;
-    max-width: 280px;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
-        font-size: 15px;
-    line-height: 33px;
-    overflow: hidden;
-}
-  
-  .message-box p {
-    margin: 0 0 0.5rem 0;
-  }
-  .message-box p.bold {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-  }
-      .message-box p:last-child {
-    margin-bottom: 0;
-  }
-  .whatsapp-btn {
-    margin-top: 3.25rem;
-    width: 100%;
-    background-color: #25d366;
-    border: none;
-    border-radius: 9999px;
-    padding: 0.75rem 0;
-    color: white;
-    font-weight: 600;
-    font-size: 15px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    transition: background-color 0.2s ease;
-  }
-  .whatsapp-btn:hover {
-    background-color: #1ebe5b;
-  }
-  .whatsapp-icon {
-    font-size: 20px;
-    display: inline-block;
+    .hero-content {
     position: relative;
-    width: 20px;
-    height: 26px;
-  }
-  /* WhatsApp icon SVG */
-  .whatsapp-icon svg {
-    fill: white;
-    width: 20px;
-    height: 31px;
-  }
-  
- .time-popup {
-      text-align: center;
-    /* font-weight: 800; */
-    font-size: 10px;
-    position: relative;
-    opacity: 0.3;
-    color: rgb(17, 17, 17);
-}
-
-
-.call-btn {
-  background-color: #0052cc;
-  color: white;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  z-index: 1000;
-}
-
-.popup-overlay {
-  display: none;
-  position: fixed;
-  top: 78px;;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.6);
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-content {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
-  width: 300px;
-}
-
-.call-link {
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 15px;
-  background-color: #f1f5f9;
-  padding: 10px 15px;
-  border-radius: 8px;
-  color: #30688F;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.subtext {
-  font-size: 12px;
-  color: gray;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
-.close-btn {
-  background: #e9ebef;
-    color: #121111;
-    border: none;
-    border-radius: 50%;
-    font-size: 16px;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    bottom: 53px;
-    left: 70%;
-    transform: translateX(-50%);
-  cursor: pointer;
-}
-  .whatsapp-widget {
-    position: fixed;
-    bottom: 20px; /* adjust vertical position */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999; /* make sure it's above other elements */
-}
-#more {display: none;}
-.navbar-expand-lg .navbar-nav .nav-link{
-    color: #ece5dd;
-}
-
-.list-unstyled a{
-  color: #f0f7ff !important;
-  text-decoration:none;
-}
-.navbar-toggler{
-    color: #fff !important;
-    background-color: #fff;
-}
-.dropdown-menu.show{
-    display: grid;
-}
-a.btn.btn-primary.px-4 {
-    background-color: #FFBA08;
-    border-color: #FFBA08;
-}
-/* CSS */
-.hero-section {
-  position: relative;
-  background: url('bg-hero.png') no-repeat center center/cover;
-  color: #fff; /* text white */
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0; /* top:0; right:0; bottom:0; left:0 */
-  background: rgba(0,0,0,0.5);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2; /* keep text above overlay */
-}
-@media (max-width: 825px) {
-  .hero-content{
-    padding: 50px 0 ;
-  }
-}
-
-</style>
-<script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@graph": [
-    {
-    "@type": "Organization",
-    "@id": "https://dubaidoctoroncall.com/#organization",
-    "name": "Dubai Doctor On Call",
-    "url": "https://dubaidoctoroncall.com/",
-    "logo": "https://dubaidoctoroncall.com/wp-content/uploads/2024/07/logo.png",
-    "sameAs": [
-    "https://www.facebook.com/dubaidoctoroncall",
-    "https://www.instagram.com/dubaidoctoroncall",
-    "https://www.linkedin.com/company/dubaidoctoroncall"
-    ],
-    "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+971-50-1234567",
-    "contactType": "customer service",
-    "areaServed": "AE",
-    "availableLanguage": ["English", "Arabic"]
+    z-index: 2; /* keep text above overlay */
     }
-    },
-    {
-    "@type": "WebSite",
-    "@id": "https://dubaidoctoroncall.com/#website",
-    "url": "https://dubaidoctoroncall.com/",
-    "name": "Dubai Doctor On Call",
-    "publisher": {
-    "@id": "https://dubaidoctoroncall.com/#organization"
-    },
-    "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://dubaidoctoroncall.com/?s={search_term_string}",
-    "query-input": "required name=search_term_string"
-    }
-    },
-    {
-    "@type": "LocalBusiness",
-    "@id": "https://dubaidoctoroncall.com/#localbusiness",
-    "name": "Dubai Doctor On Call",
-    "url": "https://dubaidoctoroncall.com/",
-    "logo": "https://dubaidoctoroncall.com/wp-content/uploads/2024/07/logo.png",
-    "image":
-    "https://dubaidoctoroncall.com/wp-content/uploads/2024/07/doctor-on-call-dubai.jpg",
-    "description": "Dubai Doctor On Call provides professional home healthcare services in
-    Dubai, including doctor visits, nursing, physiotherapy, and lab tests at your doorstep.",
-    "telephone": "+971-50-1234567",
-    "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Deira - M31 CBD MAKTOUM Branch building - Al Khabaisi",
-    "addressLocality": "Dubai",
-    "addressRegion": "Dubai",
-    "postalCode": "00000",
-    "addressCountry": "AE"
-    },
-    "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 25.276987,
-    "longitude": 55.296249
-    },
-    "openingHoursSpecification": [
-    {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday"],
-    "opens": "09:00",
-    "closes": "20:00"
-    },
-    {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Sunday",
-    "opens": "Closed",
-    "closes": "Closed"
-    }
-    ],
-    "priceRange": "AED",
-    "parentOrganization": {
-    "@id": "https://dubaidoctoroncall.com/#organization"
+    @media (max-width: 825px) {
+    .hero-content{
+        padding: 50px 0 ;
     }
     }
-    ]
-    }
-</script>
+
+    </style>
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+        {
+        "@type": "Organization",
+        "@id": "https://dubaidoctoroncall.com/#organization",
+        "name": "Dubai Doctor On Call",
+        "url": "https://dubaidoctoroncall.com/",
+        "logo": "https://dubaidoctoroncall.com/wp-content/uploads/2024/07/logo.png",
+        "sameAs": [
+        "https://www.facebook.com/dubaidoctoroncall",
+        "https://www.instagram.com/dubaidoctoroncall",
+        "https://www.linkedin.com/company/dubaidoctoroncall"
+        ],
+        "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+971-50-1234567",
+        "contactType": "customer service",
+        "areaServed": "AE",
+        "availableLanguage": ["English", "Arabic"]
+        }
+        },
+        {
+        "@type": "WebSite",
+        "@id": "https://dubaidoctoroncall.com/#website",
+        "url": "https://dubaidoctoroncall.com/",
+        "name": "Dubai Doctor On Call",
+        "publisher": {
+        "@id": "https://dubaidoctoroncall.com/#organization"
+        },
+        "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://dubaidoctoroncall.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+        }
+        },
+        {
+        "@type": "LocalBusiness",
+        "@id": "https://dubaidoctoroncall.com/#localbusiness",
+        "name": "Dubai Doctor On Call",
+        "url": "https://dubaidoctoroncall.com/",
+        "logo": "https://dubaidoctoroncall.com/wp-content/uploads/2024/07/logo.png",
+        "image":
+        "https://dubaidoctoroncall.com/wp-content/uploads/2024/07/doctor-on-call-dubai.jpg",
+        "description": "Dubai Doctor On Call provides professional home healthcare services in
+        Dubai, including doctor visits, nursing, physiotherapy, and lab tests at your doorstep.",
+        "telephone": "+971-50-1234567",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Deira - M31 CBD MAKTOUM Branch building - Al Khabaisi",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "postalCode": "00000",
+        "addressCountry": "AE"
+        },
+        "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.276987,
+        "longitude": 55.296249
+        },
+        "openingHoursSpecification": [
+        {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+        },
+        {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "Closed",
+        "closes": "Closed"
+        }
+        ],
+        "priceRange": "AED",
+        "parentOrganization": {
+        "@id": "https://dubaidoctoroncall.com/#organization"
+        }
+        }
+        ]
+        }
+    </script>
 </head>
 
 
@@ -477,6 +480,9 @@ a.btn.btn-primary.px-4 {
 
                     <li class="nav-item">
                         <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
 
                     
