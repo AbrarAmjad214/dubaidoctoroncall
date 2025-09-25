@@ -1865,3 +1865,8 @@ footer {
     .call-btn-Footer:hover {
       background-color: #0D2441;
     }
+@media (min-width: 1400px) {
+  .text-center.d-block.mb-0.top-m {
+    margin-top: 70px !important;
+}
+}
