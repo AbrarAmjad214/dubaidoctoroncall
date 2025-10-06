@@ -368,6 +368,89 @@
         }
     </style>
     
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+        {
+        "@type": "Organization",
+        "@id": "https://dubaidoctoroncall.com/#organization",
+        "name": "Dubai Doctor On Call",
+        "url": "https://dubaidoctoroncall.com/",
+        "logo": "https://dubaidoctoroncall.com/wp-content/uploads/2024/07/logo.png",
+        "sameAs": [
+        "https://www.facebook.com/dubaidoctoroncall",
+        "https://www.instagram.com/dubaidoctoroncall",
+        "https://www.linkedin.com/company/dubaidoctoroncall"
+        ],
+        "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+971-50-1234567",
+        "contactType": "customer service",
+        "areaServed": "AE",
+        "availableLanguage": ["English", "Arabic"]
+        }
+        },
+        {
+        "@type": "WebSite",
+        "@id": "https://dubaidoctoroncall.com/#website",
+        "url": "https://dubaidoctoroncall.com/",
+        "name": "Dubai Doctor On Call",
+        "publisher": {
+        "@id": "https://dubaidoctoroncall.com/#organization"
+        },
+        "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://dubaidoctoroncall.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+        }
+        },
+        {
+        "@type": "LocalBusiness",
+        "@id": "https://dubaidoctoroncall.com/#localbusiness",
+        "name": "Dubai Doctor On Call",
+        "url": "https://dubaidoctoroncall.com/",
+        "logo": "https://dubaidoctoroncall.com/wp-content/uploads/2024/07/logo.png",
+        "image":
+        "https://dubaidoctoroncall.com/wp-content/uploads/2024/07/doctor-on-call-dubai.jpg",
+        "description": "Dubai Doctor On Call provides professional home healthcare services in
+        Dubai, including doctor visits, nursing, physiotherapy, and lab tests at your doorstep.",
+        "telephone": "+971-50-1234567",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Deira - M31 CBD MAKTOUM Branch building - Al Khabaisi",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "postalCode": "00000",
+        "addressCountry": "AE"
+        },
+        "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.276987,
+        "longitude": 55.296249
+        },
+        "openingHoursSpecification": [
+        {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+        },
+        {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "Closed",
+        "closes": "Closed"
+        }
+        ],
+        "priceRange": "AED",
+        "parentOrganization": {
+        "@id": "https://dubaidoctoroncall.com/#organization"
+        }
+        }
+        ]
+        }
+    </script>
 </head>
 
 
@@ -380,7 +463,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header -->
-    <div class="hero-section" style="background: url('pic/s6.webp') no-repeat center center/cover; height:100vh;">
+    <div class="hero-section" style="background: url('pic/iv-drip-dubai.png') no-repeat center center/cover; height:100vh;">
 
         <!-- Header -->
         <div class="header mb-5">
@@ -415,7 +498,7 @@
                                     Services
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                    <li><a class="dropdown-item" href="./services/lab-at-home.html">Doctor on Call</a></li>
+                                    <li><a class="dropdown-item" href="./services/lab-at-home.html">Lab At Home</a></li>
                                     <li><a class="dropdown-item" href="./services/nursing-care.html">Nursing Care</a>
                                     </li>
                                     <li><a class="dropdown-item" href="./services/iv-drip-therapy.html">IV Drip
@@ -450,150 +533,125 @@
 
         <div class="hero-content banner banner-cont container h-100 mt-5">
             <div class="row align-items-center h-100">
-                <section class="hero text-white py-6">
-                    <div class="container py-6">
-                        <div class="row align-items-center text-center">
-                            <div class="col-lg-12">
-                                <h1 class="display-6 fw-bold">Healthcare at Home: Guides & Tips</h1>
-                                <p class="lead">Read latest articles about Doctor on Call, Nursing Care, IV Drip Therapy,
-                                    Physiotherapy, General Doctor Consultation and Chronic Care.</p>
-                            </div>
-                        </div>
+                <section class="hero text-center">
+                    <div class="container">
+                        <h1 class="display-5 fw-bold">IV Drip Dubai: </h1>
+                        <p class="lead">The Ultimate Guide to IV Drip
+Therapy and IV Immune Boost at Home
+</p>
                     </div>
                 </section>
             </div>
         </div>
 
     </div>
-    <main class="container my-5">
-        <div class="row gy-4">
-            <div class="col-lg-8">
-                <!-- Filters -->
-                <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
-                    <span class="me-2">Filter by:</span>
-                    <button class="btn btn-sm btn-outline-secondary active" data-filter="all">All</button>
-                    <button class="btn btn-sm btn-outline-secondary" data-filter="lab">Doctor on Call</button>
-                    <button class="btn btn-sm btn-outline-secondary" data-filter="iv-drip-dubai">IV Drip Dubai</button>
-                </div>
 
-                <!-- Blog list -->
-                <div id="posts" class="row g-4">
+    <main class="container my-5 blog-content">
+        <article>
+            <h1>IV Drip Dubai: The Ultimate Guide to IV Drip Therapy and IV Immune Boost at Home</h1>
 
-                    <!-- Example Post (Doctor on Call) -->
-                    <article class="col-12 post-card" data-service="lab">
-                        <div class="card border-0 shadow-sm">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="https://dubaidoctoroncall.com/pic/services/s1.jpg"
-                                        class="img-fluid rounded-start" alt="Doctor on Call">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <h5 class="card-title mb-1">Doctor on Call in Dubai: Healthcare at Your Doorstep</h5>
-                                            <span class="service-badge">Doctor on Call</span>
-                                        </div>
-                                        <p class="post-excerpt mb-2">In a fast-paced city like Dubai, where time is precious and traffic can be unpredictable,
-                                        healthcare has evolved to meet people where they are. The rise of Doctor on Call services
-                                        has transformed medical care by bringing doctors, nursing care, lab tests, and diagnostics right
-                                        into homes, hotels, or offices in Dubai.
-                                        </p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <small class="text-muted">Sep 1, 2025 • 4 min read</small>
-                                            <a href="dubai-doctor-on-call-blog.html" class="btn btn-sm btn-primary" 
-                                                data-title="Why Doctor on Call is Safer & More Convenient"
-                                                data-body="Full post content for Doctor on Call...">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-12 post-card" data-service="iv-drip-dubai">
-                        <div class="card border-0 shadow-sm">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="pic/iv-drip-dubai.png"
-                                        class="img-fluid rounded-start" alt="Doctor on Call">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <h5 class="card-title mb-1">IV Drip Dubai</h5>
-                                            <span class="service-badge">IV Drip Dubai</span>
-                                        </div>
-                                        <p class="post-excerpt mb-2">IV drip therapy is a medical treatment that delivers fluids, vitamins, minerals, and other
-                                            essential nutrients directly into your bloodstream via an intravenous drip. Unlike oral
-                                            supplements, which must pass through the digestive system and may lose potency, IV drips
-                                            provide nearly 100% absorption, offering fast and effective hydration and nutrient replenishment.
-                                        </p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <small class="text-muted">Oct 06, 2025 • 4 min read</small>
-                                            <a href="iv-drip-dubai.html" class="btn btn-sm btn-primary" 
-                                                data-title="Why IV Drip Dubai is Safer & More Convenient"
-                                                data-body="Full post content for IV Drip Dubai...">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+            <p>In today’s fast-paced world, maintaining optimal health and energy can be a challenge — especially in a vibrant city like Dubai, where busy schedules and a demanding climate can take a toll on your well-being. Fortunately, IV drip therapy in Dubai has emerged as a popular wellness solution to help boost your immune system, rehydrate your body, and restore vital nutrients efficiently. Whether you’re searching for IV drip Dubai, IV drip at home, or the benefits of an IV immune boost, this comprehensive guide will walk you through everything you need to know.</p>
 
-                </div>
+            <h2>What is IV Drip Therapy?</h2>
+            <p>IV drip therapy is a medical treatment that delivers fluids, vitamins, minerals, and other essential nutrients directly into your bloodstream via an intravenous drip. Unlike oral supplements, which must pass through the digestive system and may lose potency, IV drips provide nearly 100% absorption, offering fast and effective hydration and nutrient replenishment.</p>
 
-                <!-- Pagination -->
-                <nav class="mt-4" aria-label="Page navigation">
-                    <ul class="pagination">
-                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                </nav>
+            <h2>Why IV Drip Therapy is Gaining Popularity in Dubai</h2>
+            <p>Dubai’s hot climate, combined with hectic work lifestyles and travel, often leads to dehydration, fatigue, and weakened immunity. Many residents and visitors turn to IV drip therapy in Dubai as a proactive health measure to:</p>
+            <ul>
+            <li>Rehydrate quickly after long flights or intense workouts</li>
+            <li>Strengthen the immune system, especially during seasonal changes or outbreaks</li>
+            <li>Boost energy and mental clarity</li>
+            <li>Improve skin health and promote anti-aging effects</li>
+            <li>Speed up recovery from illness or hangovers</li>
+            </ul>
 
-            </div>
+            <h2>The Convenience of IV Drip at Home in Dubai</h2>
+            <p>One of the most attractive options for busy individuals is the availability of IV drip at home services. Instead of visiting a clinic or hospital, licensed medical professionals come to your home, office, or hotel to administer the treatment safely and comfortably.</p>
 
-            <!-- Sidebar -->
-            <aside class="col-lg-4 sidebar">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="mb-3">Services</h5>
-                        <div class="list-group list-group-flush">
-                            <a href="#" class="list-group-item list-group-item-action" data-filter-link="lab">Lab At
-                                Home</a>
-                            <a href="#" class="list-group-item list-group-item-action"
-                                data-filter-link="nursing">Nursing Care</a>
-                            <a href="#" class="list-group-item list-group-item-action" data-filter-link="iv">IV Drip
-                                Therapy</a>
-                            <a href="#" class="list-group-item list-group-item-action"
-                                data-filter-link="physio">Physiotherapy</a>
-                            <a href="#" class="list-group-item list-group-item-action"
-                                data-filter-link="consult">General Doctor Consultation</a>
-                            <a href="#" class="list-group-item list-group-item-action"
-                                data-filter-link="chronic">Chronic Care</a>
-                        </div>
-                    </div>
-                </div>
+            <h3>Advantages of Choosing IV Drip at Home in Dubai:</h3>
+            <ul>
+            <li><strong>Time-Saving:</strong> No need to commute or wait in clinics.</li>
+            <li><strong>Comfort:</strong> Relax in your own space while receiving the infusion.</li>
+            <li><strong>Privacy:</strong> Personalized treatment in a discreet environment.</li>
+            <li><strong>Flexible Scheduling:</strong> Treatments available at your preferred time, including evenings and weekends.</li>
+            </ul>
 
-                
+            <h2>What is IV Immune Boost?</h2>
+            <p>One of the most popular types of IV drips available in Dubai is the IV immune boost. This formulation is packed with high doses of Vitamin C, zinc, B-complex vitamins, and antioxidants designed to strengthen your immune defenses.</p>
 
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h6 class="mb-2">Recent Posts</h6>
-                        <ul class="list-unstyled small mb-0">
-                            <li><a href="#" class="text-decoration-none">IV Drip: Safety Checklist Before Your Visit</a>
-                            </li>
-                            <li><a href="#" class="text-decoration-none">Preparing Elderly Patients for a Home Lab
-                                    Visit</a></li>
-                            <li><a href="#" class="text-decoration-none">Top Physiotherapy Tips After Knee Surgery</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <h3>Who Should Consider an IV Immune Boost?</h3>
+            <ul>
+            <li>Individuals frequently exposed to germs (office workers, travelers)</li>
+            <li>Those recovering from illness or surgery</li>
+            <li>People with chronic fatigue or stress</li>
+            <li>Anyone wanting to proactively prevent seasonal flu or colds</li>
+            </ul>
 
-            </aside>
-        </div>
+            <h2>Popular Types of IV Drips Offered in Dubai</h2>
+            <ul>
+            <li><strong>Hydration Drip:</strong> Replenishes fluids and electrolytes for dehydration.</li>
+            <li><strong>Energy Boost Drip:</strong> Contains B vitamins and amino acids to increase energy.</li>
+            <li><strong>Glutathione Drip:</strong> Known for detoxification and skin brightening.</li>
+            <li><strong>IV Immune Boost:</strong> Vitamins and minerals to strengthen immunity.</li>
+            <li><strong>Hangover Relief Drip:</strong> Helps recover from alcohol effects quickly.</li>
+            <li><strong>Anti-Aging Drip:</strong> Combines antioxidants and nutrients to combat aging signs.</li>
+            </ul>
+
+            <h2>How Much Does IV Drip Therapy Cost in Dubai?</h2>
+            <p>The IV drip Dubai price varies depending on the type of drip, clinic, and whether you choose an at-home service or visit a clinic. Generally:</p>
+            <ul>
+            <li>Basic hydration drips start from AED 150</li>
+            <li>Specialty drips like the IV immune boost or glutathione range from AED 150</li>
+            <li>Mobile IV drip at home services may include an additional convenience fee</li>
+            </ul>
+            <p>It’s important to prioritize quality and safety over cost. Always choose licensed clinics with experienced medical staff.</p>
+
+            <h2>Where to Get the Best IV Drip in Dubai?</h2>
+            <p>Dubai boasts many reputable clinics and wellness centers offering IV drip therapy. Some popular options include:</p>
+            <ul>
+            <li>Medical centers affiliated with international hospitals</li>
+            <li>Specialized wellness clinics focused on IV therapy</li>
+            <li>Mobile services offering IV drip at home in Dubai</li>
+            </ul>
+            <p>When selecting a provider, consider factors like medical qualifications of staff, quality and origin of vitamins and fluids used, reviews and reputation, and availability of personalized consultations.</p>
+
+            <h2>The Process of Getting IV Drip Therapy in Dubai</h2>
+            <ol>
+            <li><strong>Consultation:</strong> Book a consultation (in-person or online) with a qualified healthcare provider.</li>
+            <li><strong>Medical Assessment:</strong> The provider reviews your medical history and goals.</li>
+            <li><strong>Customized Plan:</strong> Based on your needs, they recommend the best drip formula.</li>
+            <li><strong>Administration:</strong> The IV drip is administered by a licensed nurse or doctor, either in the clinic or at your home.</li>
+            <li><strong>Recovery:</strong> The session usually lasts 30 to 60 minutes, after which you can resume your daily activities feeling revitalized.</li>
+            </ol>
+
+            <h2>Who Should Avoid IV Drip Therapy?</h2>
+            <p>Although generally safe, IV drip therapy may not be suitable for everyone. Those with certain medical conditions, like severe heart or kidney disease, blood clotting disorders, or allergies to any components, should consult a healthcare professional first.</p>
+
+            <h2>IV Drip Therapy: A Wellness Investment</h2>
+            <p>With its fast-acting results and convenience, IV drip therapy in Dubai has become a valuable tool for wellness maintenance. Whether you opt for a quick hydration drip, an IV immune boost, or prefer the comfort of an IV drip at home, this therapy supports your body’s natural functions, helping you stay energized, healthy, and ready to tackle your day.</p>
+
+            <h2>Conclusion</h2>
+            <p>If you’re seeking an effective way to enhance your health, recover from fatigue, or improve your immune system, IV drip therapy in Dubai is an excellent option. With the convenience of IV drip at home in Dubai, professional medical care is more accessible than ever. Make sure to choose trusted clinics and experienced providers to ensure safety and quality results.</p>
+            <p>Ready to give your health a boost? Explore local providers today and experience the transformative power of IV drip therapy in Dubai!</p>
+
+            <section class="faq-section mt-5">
+            <h2>FAQs — IV Drip Dubai and IV Drip at Home</h2>
+
+            <h5>What is an IV drip?</h5>
+            <p>An IV drip (intravenous drip) is a medical treatment where fluids, vitamins, and nutrients are delivered directly into the bloodstream through a vein. This method ensures faster and more effective absorption compared to oral supplements.</p>
+
+            <h5>How much does IV drip therapy cost in Dubai?</h5>
+            <p>The IV drip Dubai price depends on the type of drip and service location. Basic hydration drips start around AED 150, while specialty drips like an IV immune boost range from AED 150.</p>
+
+            <h5>What is IV therapy at home in Dubai?</h5>
+            <p>IV therapy at home in Dubai is a service where licensed healthcare professionals visit your home or office to administer intravenous drips, delivering vitamins, minerals, and fluids directly into your bloodstream for rapid health benefits.</p>
+
+            <h5>What is an Immune Booster IV Drip?</h5>
+            <p>An Immune Booster IV Drip is a vitamin and nutrient infusion therapy designed to strengthen your body’s immune system by delivering high doses of immune-supporting vitamins and minerals directly into your bloodstream for faster and more effective results.</p>
+            </section>
+        </article>
     </main>
+
 
     <!-- Post Modal (reads full post) -->
     <div class="modal fade" id="postModal" tabindex="-1">
@@ -606,7 +664,7 @@
                 <div class="modal-body" id="postModalBody">Post content...</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="dubai-doctor-on-call-blog.html" class="btn btn-primary">Read on site</a>
+                    <a href="#" class="btn btn-primary">Read on site</a>
                 </div>
             </div>
         </div>
@@ -633,7 +691,7 @@
                         <div class="mb-3">
                             <label class="form-label">Service</label>
                             <select class="form-select" name="service">
-                                <option>Doctor on Call</option>
+                                <option>Lab At Home</option>
                                 <option>Nursing Care</option>
                                 <option>IV Drip Therapy</option>
                                 <option>Physiotherapy</option>
@@ -702,7 +760,7 @@
                 <div class="col-lg-3 mb-4 mb-lg-0">
                     <h5 class="mb-3">Services</h5>
                     <ul class="list-unstyled footer-menu">
-                        <li><a href="services/lab-at-home.html">Doctor on Call</a></li>
+                        <li><a href="services/lab-at-home.html">Lab At Home</a></li>
                         <li><a href="services/nursing-care.html">Nursing Care</a></li>
                         <li><a href="services/iv-drip-therapy.html">IV Drip Therapy</a></li>
                         <li><a href="services/physiotherapy.html">Physiotherapy</a></li>
@@ -938,6 +996,7 @@
             });
         });
     </script>
+    
     <script>
         // Simple client-side filtering + modal wiring
         document.addEventListener('DOMContentLoaded', function () {
